@@ -1,0 +1,66 @@
+<html>
+   <head>
+            
+   </head>
+   <style>
+       .flex-container {
+           display: -webkit-flex;  
+           display: flex;  
+           background: dodgerblue;
+           width: 300px;
+           height: 300px;
+           border: 2px solid red;
+           margin: auto;
+           align-content:flex-start
+       }
+       .flex-item {
+           display: -webkit-flex;  
+           display: flex;  
+           background-color: aqua;
+           width: 209px;
+           height: 700px;
+           color: firebrick;
+           font-family: inherit;
+           margin: 10px;
+       }
+        /*pseudo element */
+       
+       p::first-letter {
+           font-size:xx-large;
+             font-variant: small-caps;
+       }
+       
+       h1::after{
+       content: url(MW-EK193_musk_20160413120645_ZH.jpg);
+       }
+       
+     /*pseudo class */
+       
+       h1:first-child{
+           color: blue
+       }
+        p:last-child{
+           background-color: tomato
+       }
+       
+       
+    </style>
+    <body>
+       
+        <section>
+           <h1>hello</h1>
+            <div class = "flex-container">
+                <div class="flex-item">hello<p>given</p> </div>
+                 <div class="flex-item">man<p>statement</p> </div>
+                 <div class="flex-item">what<p>statement</p> </div>
+
+            </div>
+        </section>
+        
+    </body>
+</html>
+
+
+<!--
+    flex container and flext item create flag
+-->
