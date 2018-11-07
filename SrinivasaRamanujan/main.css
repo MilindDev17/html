@@ -1,0 +1,85 @@
+/*---------------------------------*/
+*{
+    background-color: dodgerblue;
+    margin: 0;
+    
+}
+
+header{
+    background-color: darkolivegreen;
+    height: auto;
+    width:auto;
+    top: auto;
+    bottom: auto;
+    line-height: 3.25em; 
+    cursor: default;
+    text-align: center; /*header taking pic and text to center*/
+    position: absolute;
+    border: 3px solid white;
+}
+
+header .inner {
+    background-color: darkgoldenrod;
+    margin: auto;
+    padding: 4px;
+    position: relative;
+}
+
+header .inner {
+    margin: 0 auto;
+    position: relative;
+}
+
+header .logo {
+    color: darkgoldenrod;
+    font-size: .3em;
+    height: inherit;
+}
+
+header a {
+    display: inline-block;
+/*    padding: 0 0.75em;*/
+    color: inherit;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/*selector*/
+header a:hover{
+    color: darkred;
+    font-size: 20px;
+}
+
+header a:first-child {
+    font-size: 20px;
+    display: inline-flex
+}
+header a:last-child {
+    padding-right: 0;
+}
+
+
+/*----------------------------------*/
+
+/*SCREENS*/
+@media screen and width(max-width:350px) {
+    header a {
+        padding: 0 0.3em;
+    }
+}
+
+@media screen and width(max-width:200px) {
+    header .nav{
+        top: 20px;
+        bottom:20px;
+    }
+}
+
+/*------------------------------------*/
+
+#banner {
+    margin-left: 300px;
+    letter-spacing: 0.3em;
+    
+}
+
