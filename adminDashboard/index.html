@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="title icon" type="image/png" href="images/title.png"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+     <title>Admin</title>
+  </head>
+  <body>
+    <!--nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <button class="navbar-toggler mb-2 bg-light" type="button" data-toggle ="collapse" data-target="#myNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+          <div class="row">
+            <!--two columb one for upper sidebar and second for down sidebar-->
+            
+            <!--sidebar-->
+            <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+              <a href="#" class="navbar-brand text-white d-block mx-auto text-center   py-3 mb-4 bottom-border">best places</a>
+              <div class="bottom-border pb-3 ">
+                  <img src="images/timetotravel.jpg" width="50" class="rounded-circle mr-3">
+                  <a href="" class="text-white">hello milind</a>
+              </div>
+              <ul class="navbar-nav flex-column mt-4">
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-1 current"><i class="fas fa-home text-light fa-lg mr-3"></i>Dashboard</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-1 sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>profile</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-1 sidebar-link"><i class="fas fa-envelope text-light fa-lg mr-3"></i>inbox</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-1 sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>sales</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-1 sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>analyst</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-1 sidebar-link"><i class="fas fa-chart-bar text-light fa-lg mr-3"></i>charts</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-1 sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>tables</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-1 sidebar-link"><i class="fas fa-wrech text-light fa-lg mr-3"></i>setting</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-1 sidebar-link"><i class="fas fa-file-alt text-light fa-lg mr-3"></i>language</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-1 sidebar-link"><i class="fas fa-home text-light fa-lg mr-3"></i>documentation</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-1 sidebar-link"><i class="fas fa-home text-light fa-lg mr-3"></i>exit</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+            <!--end sidebar-->
+            
+            <!--top sidebar nav-->
+            <div class="col-xl-10 col-lg-9 col-md-8 ml-auto fixed-top bg-dark top-navbar">
+              <div class="row align-items-center">
+                <div class="col-md-4">
+                  <h4 class="text-light text-uppercase mb-0"> Dashboard</h4> 
+                </div>
+              <div class="col-md-5">
+                <form>
+                  <div class="input-group">
+                    <input type="text" class="form-control search-input" placeholder="search">
+                    <button type="button" class="btn btn-white search-button"><i class="fas fa-search text-danger"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-3">
+              <ul class="navbar-nav">
+                <li class="nav-item icon-parent"><a href="#" class="nav-link icon-bullet"><i class="fas fa-comments text-muted fa-lg"></i></a></li>
+                <li class="nav-item icon-parent"><a href="#" class="nav-link icon-bullet"><i class="fas fa-bell text-muted fa-lg"></i></a></li>
+                <li class="nav-item ml-md-auto icon-parent" ><a href="#" class="nav-link icon-bullet" data-toggle="modal" data-target="#sign-out"><i class="fas fa-sign-out-alt text-danger fa-lg text-muted fa-lg"></i></a></li>
+              </ul>
+              </div>
+              </div>
+            </div>
+            <!--end sidebar-->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav bar -->
+
+    <!--model -->
+    <div class="modal fade" id="sign-out">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>want to close</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h4>PRESS MODAL BODY</h4>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success" data-dismiss="modal">stay heere</button>
+            <button class="btn btn-success" data-dismiss="modal">stay logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end model-->
+
+    <!--card section--> <!--card common css-->
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+            <div class="row pt-5 mt md-3  mb-5">
+              <div class="col-xl-3 col-sm-6 p-2">
+                <div class="card card-common">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <i class="fas fa-shopping-cart fa-3x text-danger"></i>
+                      <div class="text-right text-secondary">
+                      <h4>sales</h4>
+                      <h4>135$</h4>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-secondary">
+                    <i class="fas fa-sync mr-3"></i>
+                    <span>updated now</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 p-2">
+                  <div class="card card-common">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <i class="fas fa-chart-bar text-warning fa-3x"></i>
+                        <div class="text-right text-secondary">
+                        <h4>charts</h4>
+                        <h4>1355$</h4>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="card-footer text-secondary">
+                      <i class="fas fa-sync mr-3"></i>
+                      <span>updated now</span>
+                    </div>
+                  </div>
+                </div>
+              <div class="col-xl-3 col-sm-6 p-2">
+                  <div class="card card-common">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <i class="fas fa-money-bill-alt text-success fa-3x"></i>
+                        <div class="text-right text-secondary">
+                        <h4>Expenses</h4>
+                        <h4>156425$</h4>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="card-footer text-secondary">
+                      <i class="fas fa-sync mr-3"></i>
+                      <span>updated now</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 p-2">
+                    <div class="card card-common">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                          <i class="fas fa-users fa-3x text-danger"></i>
+                          <div class="text-right text-secondary">
+                          <h4>Users</h4>
+                          <h4>1654$</h4>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="card-footer text-secondary">
+                        <i class="fas fa-sync mr-3"></i>
+                        <span>updated now</span>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--card section-->
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"> </script>
+</body>
+</html>
