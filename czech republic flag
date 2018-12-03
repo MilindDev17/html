@@ -1,0 +1,35 @@
+*{
+    margin: 0%;
+    color: maroon;
+}
+.container {
+    background-color: maroon;
+    margin: 70px;
+    margin-left: 420px;
+    width: 20%;
+    height: 20%;
+    /* border-box:border-box; */
+    
+}
+.container::before{
+    content:"";
+    border-left:black solid 20px;
+    border-right: red solid 20px;
+    border-bottom: blue solid 50px;
+}
+
+
+=====================
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hello</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+    </div>
+</body>
+</html>
