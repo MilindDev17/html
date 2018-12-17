@@ -1,0 +1,435 @@
+<!-- Specificity
+
+Another aspect where selectors differ is in their specificity - an id selector is deemed to be more specific than class selector. This means that where styles conflict on an element, the ones defined with the more specific selector will override less specific selectors. For example, given <div id="sidebar" class="box"> any rules for #sidebar with override conflicting rules for .box -->
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="F:\htmlcss\urbancss.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+<!-- urbancss -->
+
+<style type="text/css">
+
+*{
+	padding: 0;
+	margin:0;
+	}
+
+	html,body{   /*html and body back to back color*/
+	 	border-color: green;
+		background-color:blue;
+		padding:20px;
+		border-width: 2px;
+		border-style: solid;
+		min-height: 400px;
+		min-width: 400px;
+
+	}
+	#container{
+		background-color:white;
+	/*	text-decoration: underline; */	
+		width: 35%;
+		height: 90%;
+		text-align: center;
+        margin-left:40%;
+        margin-right: 30px;
+        margin-top: 30px;
+        position: relative;	
+
+        }
+
+	.nav-items{
+		padding: 70px 35px 30px 0px;   /*moving right to 90px  up right down side login container*/
+	    text-align: center;
+		
+	 }
+    .nav-login{
+ 		text-align: center;
+ 		padding: 10px 70px 50px 80px;
+		margin-left: -30%;  /*left black increaase*/
+	}
+	
+	a.nav-interact{
+			color: white;
+			background-color: black;
+			padding: 10px 10px 20px 150px; /*color or fa depends	*/				
+		    margin-left: 100px
+		    max-width:100%;
+		    padding-right: 220px;  /*black will increase */
+		    	}
+	
+/* iits important firstly defined .fa description */
+	.fa{
+		margin-left: 225px; /*arrow increase*/
+		margin-top: 0px; 	
+
+	}
+
+	
+	#ContactNmbers{
+		width: 20%;
+		height: 10%;
+        padding: 20px 10px 10px 10px; 	
+        
+    }	
+
+    #copyright{
+    	padding: 20px 50px 15px 135px;
+    	border-color: red;
+    	margin-right: -90px;
+
+    }
+
+/* ---or--- value*/
+.hr-container {
+    -js-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    line-height: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; /*here content container  box  change color */
+}	
+.hr-inline {
+    -webkit-box-flex: 1;
+    width:70%;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 0.5;
+    height: 1px;
+    background: #D8D8D8;
+    width: initial !important;
+    border: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* here inside box black */
+}
+.hr-inline {
+    width: 44.2%!important;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+hr {
+    height: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+hr[Attributes Style] {
+    margin-left: auto;
+    margin-right: 0px;
+}
+user agent stylesheet
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+
+}
+.hr-container {
+    -js-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    line-height: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    
+}
+Style Attribute {
+    pointer-events: auto;
+    opacity: 1;
+}
+.outer-box {
+    border: solid 1px rgba(216,216,216,0.5);
+    border-radius: 10px;
+    font-family: 'Camphor';
+    
+}
+body {
+    font-family: 'Camphor' !important;
+}
+body {
+    font-family: Camphor;
+    font-weight: 400;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/*its usuallly used for webkit*/
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+background-attachment:
+scroll;
+background-clip:
+border-box;
+background-color:
+rgb(216, 216, 216);
+background-image:
+none;
+background-origin:
+padding-box;
+background-position-x:
+0%;
+background-position-y:
+0%;
+background-repeat-x:
+
+ 
+ .padding-top8{
+ 	padding: 20px;
+ }
+ .head{
+ 	font-size: 11;
+ 	color:black;
+ 	vertical-align: baseline;
+ 	text-align: right;
+ 
+ }
+ .lockDesign{
+ 	 border-color: green;
+ 	 border-width: 45;
+ 	 border-style: solid;
+ 	 background-size: black;
+ }
+ /*
+ display: inline-block;
+          float: left;
+          margin-left: 2%;
+          font-size: 13px;
+          font-family: 'Open Sans';
+ */
+
+ /*
+ #buttonFaceGoogle{
+		width: 100%;
+		height: 100%;
+		background-color: red;
+	}
+ .btn1{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: -0.6px 20px 0px -0.10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin:  2px;
+    cursor: pointer;
+   }
+   .btn2{
+   		   display: inline-block;
+          float: right;
+          margin-right: 2%;
+          marker-mid: 20%;
+          font-size: 13px;
+          font-family: 'Open Sans';
+     
+   }
+@media(max-width: 414px){
+#buttonFaceGoogle{
+		width: 80;
+		height: 20;
+		overflow-y: auto;
+		position: relative;
+	}
+ .btn1{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    font-size: 16px;
+    margin:  2px;
+    cursor: pointer;
+   
+
+   }
+   .btn2{
+   		  
+          float: right;
+          margin-right: 4%;
+          font-size: 13px;
+          font-family: 'Open Sans';
+     
+   }
+}  */
+/*moving column and row*/
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: -50px;
+}
+
+/* Create two equal columns that sits next to each other facebook and google padding */
+.column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 150px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+
+}
+
+
+</style>
+</head>
+
+<body>
+	  <div id="lockDesign" style="width:100%;">
+      		<p style="font-size:10px;font-style:normal;margin-right: 0px;margin-top:-40px;background-color: pink;"></p>
+      	</div>
+    <div id = "contents" style="background-color: pink;"> <!--this will outside area fill and end at the last div -->
+	<!-- login / sign up -->
+		<div id = "container">
+		
+<!-- i is a image for search  left and right-->
+		<i class="fa fa-arrow-left" style="color:grey;font-size:20px;text-overflow: initial;margin-left: -90%;margin-bottom: -20px;"></i>
+		<h3><center><p style="color:grey;">welcome to urban clap </p></center></h3>
+		<!-- country code -->
+
+       <div id = "ContactNmbers" class="">
+		<!-- country codes (ISO 3166) and Dial codes. -->
+		
+		<select name="countryCode" id="" style="margin-left: 20px;">
+			<option data-countryCode="GB" value="44" Selected>UK (+44)</option>
+			<option data-countryCode="US" value="1">USA (+1)</option>
+				<optgroup label="Other countries">
+					<option data-countryCode="IN" value="91">India (+91)</option>
+					<option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
+					<option data-countryCode="AU" value="61">Australia (+61)</option>
+		
+		<!-- <option data-countryCode="GB" value="44">UK (+44)</option> -->
+		<!-- <option data-countryCode="US" value="1">USA (+1)</option> -->
+	
+					<option data-countryCode="VE" value="58">Venezuela (+58)</option>
+					<option data-countryCode="VN" value="84">Vietnam (+84)</option>
+					<option data-countryCode="VI" value="84">Virgin Islands - US (+1340)</option>
+		    		<option data-countryCode="YE" value="969">Yemen (North)(+969)</option>
+				</optgroup>
+				
+		</select>
+         <div class="column" style=" margin-left: 46px;margin-top: -20px;">
+         	<input name="mobile number" class="text-input text-input--large flush" id="fname" placeholder="mobile number" required="">
+			
+		</div>
+   
+<span id="passwordErrorBlock" class=" errorText textMuted error-block display-block"> 
+  
+</span>
+   		<!--login -->
+
+		<div class="nav-items" >
+					<span><a name="Practo login" event="Nav Bar:Interacted:Practo login" class="btn-border nav-login nav-interact">Login/Signup</a>  
+	      	     <i class="fa fa-arrow-right" style="margin-top:-19px;color:white;"></i>
+			</span>
+		</div>
+        
+<!--line with or -->
+
+  			<div id="fbContainer" style="pointer-events: auto; opacity: 1; color:white;padding: 0 10px;margin-right: -150px;margin-left: 150px">
+      		<div class="hr-container" style="text-align: right;color: grey;">
+          	<hr class="hr-inline" align="left"><span> O R </span><hr class="hr-inline" align="right">
+      		</div>
+     		</div> 
+
+
+
+
+<!-- footer continue with -->
+     	<footer>
+	      <div id ="copyright" style="font-family: 'Nanum Brush Script', cursive; font-size: 10px; color:white;margin-right: 60px ;">
+    	  <!--<p style="width: 20px;color:white;"><span>CONTINUEWITH </span></p>-->
+      	  <p style="width:10%;color:white;text-align:center;color: grey;box-shadow: green;">CONTINUE_WITH</p>
+      	  </div>    
+ 	 </footer>
+ 	
+<!-- button for facebook  and google-->
+ 		<!--<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"> -->
+         
+         
+       <div class="row"> 
+         <div class="column" >
+         <button><img src="facebook.png" style="width:100%;padding:10px 10px 10px 50px;margin-left: -90px;margin-right:10px;color: red;"><p style="color:red;margin-left: 30px;margin-top: -30px;">facebook</button>
+  		 </div>  
+ <!-- here div inside column than all depends on columb if you decrease width than area will reduce for every one -->
+      <div class="column" style="margin:20px 100px;margin-top:-55px;width: 100%;">
+         <button ><img src="google.png" style="width:100%;padding:15px 10px 14px 50px;margin-left: -60px;margin-right:40px;color:red;border-style: solid;border-color: white;"><p style="color:red;margin-left: 35px;margin-top: -30px;">google</button>
+      </div>	
+<!-- lock 
+letter-spacing: 2;width 60% means only starting to destination only half area
+          -->
+     
+       <div id="lockDesign" style="width:100%;">
+      		<!-- icon of lock insert word ???-->
+            
+      		<i class = "fa fa-lock" style="margin-left: 160px"></i>
+      		<p style="font-size:10px;font-style:normal;margin-right: -170px;margin-left:170px;margin-top: -15px;">i will permission to next value</p>
+      	</div>
+      </div>
+      </div>
+      </div>
+<!--<header class="head" style="color: red;background-color: pink;">Copyright ©2018</header> -->
+
+<header class="head">Copyright ©2018</header>
+
+</div>
+<!-- end container -->
+
+
+</body>
+</html>

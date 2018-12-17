@@ -1,0 +1,2077 @@
+
+
+<html>
+<style type="text/css">
+  
+
+  #navCollapse,
+  #bottomNavCollapse {
+      background-color: #FFFFFF;
+  }
+  .mousePointer {
+      font-weight: normal;
+      margin-bottom: 0;
+      margin-left: 30px;
+  }
+  nav[role='navigation'] {
+      box-shadow: none;
+      border: none;
+  }
+  #loginLink {
+      color: #14bef0;
+      font-weight: bold;
+  }
+  li > a#loginLink {
+    border-bottom: 3px solid #14bef0;
+  }
+  #loginLink:hover {
+    text-decoration: none;
+  }
+  .errorBlock {
+      color: #ce6767;
+      display: none;
+  }
+  .rightRegisterForm {
+      padding-bottom: 0%;
+  }
+  .hr-inline {
+      -webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+      width: 20%;            /* For old syntax, otherwise collapses. */
+      -webkit-flex: 1;       /* Safari 6.1+. iOS 7.1+, BB10 */
+      -ms-flex: 1;           /* IE 10 */
+      flex: 1;               /* NEW, Spec - Firefox, Chrome, Opera */
+      height: 1px;
+      background: #D8D8D8;
+      width: initial !important;
+      border: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+  }
+  .hr-text {
+      color: #D4D4D4;
+      width: initial !important;
+      padding-left: 5px;
+      padding-right: 5px;
+  }
+  .navbar-header {
+      background-color: white;
+  }
+  .connectFacebookBtn {
+      margin-bottom: 0%;
+  }
+  .hr-container {
+      -js-display: flex;
+      display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+      display: -ms-flexbox;  /* TWEENER - IE 10 */
+      display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+      display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+      justify-content: center;
+      line-height: 0;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+  }
+  .firstpara {
+      font-size: 14px;
+  }
+  .info {
+      margin-top: 3%;
+      width: 416px;
+  }
+  .rememberMe {
+      display: inline-block;
+      float: left;
+      margin-left: 2%;
+      font-size: 13px;
+  }
+  .forgetPswd {
+      display: inline-block;
+      float: right;
+      margin-right: 2%;
+      font-family: 'Open Sans';
+  }
+  #passwordErrorBlock {
+      padding: 5px;
+      margin-top: 5px;
+  }
+  label[for="remember"] {
+      font-weight: normal;
+  }
+  label[for="otp_flow"] {
+    font-weight: normal;
+  }
+  @media (max-width: 414px) {
+      .info {
+          margin-top: 2%;
+          width: 100%;
+      }
+      .rememberMe {
+          display: inline-block;
+          float: left;
+          margin-left: 2%;
+          font-size: 13px;
+          font-family: 'Open Sans';
+      }
+      .forgetPswd {
+          display: inline-block;
+          float: right;
+          margin-right: 2%;
+          font-size: 13px;
+          font-family: 'Open Sans';
+      }
+  }
+
+</style>
+<body>
+<body class="body-bg" data-ana="PageView:pageView" style="overflow: hidden;"><div class="practo_GlobalNavigation"><div class="navbar mobile consumer-nav en"><div class="wrapper branding"><div class="nav-left"><i class="hamburger ic icon-ic_drawer_system"></i></div><div class="nav-mid new_logo_wrap  icons "><a href="https://www.practo.com/" class="nav-interact" event="Practo Logo:Interacted:Consumer Nav"><i class="practo_logo_new"></i></a></div><div class="nav-right"><div class="nav-items"><a class="nav-login-mobile nav-interact" event="Nav Bar:Interacted:Practo login"><i class="ic icon-ic_doctor"></i></a></div></div></div><div class="overlay_layer"></div><div class="overlay"><div class="navlist"><div class="top-bar"><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Book an appointment" href="https://www.practo.com/"><i class="ic icon-ic_search_system"></i>Book an appointment</a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Consult a doctor online" href="https://www.practo.com/consult"><i class="ic icon-ic_chat"></i>Consult a doctor online</a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Book diagnostic tests" href="https://www.practo.com/labs"><i class="ic icon-ic_lab_home"></i>Book diagnostic tests</a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Read health articles" href="https://www.practo.com/healthfeed"><i class="ic icon-ic_read"></i>Read health articles</a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Order medicines" href="https://www.practo.com/order/?utm_source=practonavbar&amp;utm_medium=referral&amp;utm_campaign=practonavbarredirect"><i class="ic icon-ic_cart"></i>Order medicines</a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:View medical records" href="https://www.practo.com/drive" title="View medical records"><div><i class="ic icon-ic_records_3"></i>View medical records</div></a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Read about medicines" href="https://www.practo.com/medicine-info" title="Read about medicines"><div class="icon-wrap"><i class="ic icon-ic_medicine_info"></i></div><div class="product-block"><div>Read about medicines</div></div></a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Practo for providers" href="https://www.practo.com/providers"><i class="ic icon-ic_clinic"></i>Practo for Providers</a></div></div><div class="download"><a class="nav-interact appdownload-block" href="https://www.practo.com/health-app" event="Nav Drawer:Interacted:Download Practo app" title="Download the Practo app">Download the Practo app</a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Practo help" href="mailto:support@practo.com">Help</a></div><div class="navlink "><a class="nav-interact" event="Nav Drawer:Interacted:Practo Contact" href="https://www.practo.com/company/contact">Contact us</a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Practo Terms" href="https://www.practo.com/company/terms">Terms of service</a></div></div></div></div><div class="navbar desktop en"><div class="wrapper branding"><div class="nav-left"><span><i class="hamburger ic icon-ic_drawer_system"></i></span><span><a class="nav-interact" event="Practo Logo:Interacted:Consumer Nav" href="https://www.practo.com/"><i class="practo_logo_new"></i></a></span></div><div class="nav-right text-right"><div class="nav-items hover-dark"><span><a href="https://www.practo.com/providers/doctors/profile" class="nav-interact" event="Nav Bar:Interacted:Get listed for free"><span class="u-d-item">Get listed for free</span></a></span></div><div class="providers-marketing nav-items hover-dark u-d-trigger dropdown-toggle"><span class="u-d-item up-triangle">For Clinics &amp; Hospitals</span><span class="downarrow icon-ic_down_cheveron"></span><div class="u-d nav-dropdown text-left"><div class="u-d-item"><a class="nav-interact" event="Nav Provider Marketing:Interacted:For clinics" href="https://www.practo.com/providers/clinics/ray">Software for clinics</a></div><div class="u-d-item"><a class="nav-interact" event="Nav Provider Marketing:Interacted:For hospitals" href="https://www.practo.com/providers/hospitals">Software for hospitals</a></div><div class="u-d-item"><a class="nav-interact" event="Nav Provider Marketing:Interacted:Advertising" href="https://www.practo.com/providers/clinics/reach">Advertising</a></div><div class="u-d-item"><a class="nav-interact" event="Nav Provider Marketing:Interacted:Clinic Profile" href="https://www.practo.com/providers/clinics/profile">List your practice for Free</a></div></div></div><div class="nav-items"><span><a name="Practo login" event="Nav Bar:Interacted:Practo login" class="btn-border nav-login nav-interact ">Login / Sign Up</a></span></div></div></div><div class="overlay_layer"></div><div class="overlay"><div class="navlist"><div class="navlist-wrap"><div class="navlink cushion-logo "><span><i class="hamburger ic icon-ic_drawer_system"></i></span><span class="display-inline"><a class="nav-interact" event="Practo Logo:Interacted:Consumer Nav" href="https://www.practo.com/"><i class="practo_logo_new"></i></a></span></div><div class="navlink cushion-top"><a class="nav-interact" event="Nav Drawer:Interacted:Book an appointment" name="Book an appointment" href="https://www.practo.com/" title="Book an appointment"><div class="icon-wrap"><i class="ic icon-ic_search_system"></i></div><div class="product-block"><div>Book an appointment</div></div></a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Consult a doctor online" name="Consult a doctor online" href="https://www.practo.com/consult" title="Consult a doctor online"><div class="icon-wrap"><i class="ic icon-ic_chat"></i></div><div class="product-block"><div>Consult a doctor online</div></div></a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Book diagnostic tests" name="Book diagnostic tests" href="https://www.practo.com/labs" title="Book diagnostic tests"><div class="icon-wrap"><i class="ic icon-ic_lab_home"></i></div><div class="product-block"><div>Book diagnostic tests</div></div></a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Read health articles" name="Read health articles" href="https://www.practo.com/healthfeed" title="Read health articles"><div class="icon-wrap"><i class="ic icon-ic_read"></i></div><div class="product-block"><div>Read health articles</div></div></a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Order medicines" name="Order medicines" href="https://www.practo.com/order/?utm_source=practonavbar&amp;utm_medium=referral&amp;utm_campaign=practonavbarredirect" title="Order medicines"><div class="icon-wrap"><i class="ic icon-ic_cart"></i></div><div class="product-block"><div>Order medicines</div></div></a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:View medical records" name="View medical records" href="https://www.practo.com/drive" title="View medical records"><div class="icon-wrap"><i class="ic icon-ic_records_3"></i></div><div class="product-block"><div>View medical records</div></div></a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Read about medicines" name="Read about medicines" href="https://www.practo.com/medicine-info" title="Read about medicines"><div class="icon-wrap"><i class="ic icon-ic_medicine_info"></i></div><div class="product-block"><div>Read about medicines</div></div></a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Practo for providers" name="Practo for providers" href="https://www.practo.com/providers" title="Practo for Providers"><div class="icon-wrap"><i class="ic icon-ic_clinic"></i></div><div class="product-block"><div>Practo for Providers</div></div></a></div><div class="download"><a class="nav-interact appdownload-block" event="Nav Drawer:Interacted:Download Practo app" name="Download Practo app" href="https://www.practo.com/health-app" title="Download the Practo app">Download the Practo app</a></div></div><div class="navlist-wrap"><div class="last"><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Practo help" name="Practo help" href="mailto:support@practo.com">Help</a></div><div class="navlink "><a class="nav-interact" event="Nav Drawer:Interacted:Practo Contact" name="Contact us" href="https://www.practo.com/company/contact">Contact us</a></div><div class="navlink"><a class="nav-interact" event="Nav Drawer:Interacted:Practo Terms" name="T&amp;C" href="https://www.practo.com/company/terms">Terms of service</a></div></div></div></div></div></div></div>
+
+            <script src="https://www.practostatic.com/pel/pel-1.2.0.js"></script>
+        <div id="absNoticeBar" class="notice-bar font-normal page-body-container"></div>
+
+    <div id="clinicSyncNotificationBar" class="notice-bar font-normal page-body-container"></div>
+    <div class="page-wrapper">
+                <div class="header-bg">
+            <div class="fabric-header-container" style="display:none">
+                                    <div class="fabric-header-left-container">
+                        <div class="fabric-header-logo-block">
+                            <a class="practo_logo" href="/" style="float: left;">
+                                <img src="/bundles/practopractoapp/images/logos/practo_new_logo.svg" onerror="this.src='/bundles/practopractoapp/images/logos/practo_new_logo.png'" alt="Practo - Book Doctor Appointments Online">
+                            </a>
+                        </div>
+                    </div>
+                                <div class="fabric-header-right-wrapper">
+                    <div class="fabric-header-right-container">
+                        <div class="fabric-header-login-block">
+                                                                                                    
+                            </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+                                
+                
+                                                                
+    
+        <noscript>
+            <style>
+                .hideifnojs{
+                    display:none;
+                }
+                #home_search_container{
+                    padding-top: 20px;
+                }
+                #home_container{
+                    display:block;
+                }
+                .city-dropdown-activator {
+                    display: none;
+                }
+                .city-dropdown-country-container {
+                    clear: both;
+                }
+            </style>
+        </noscript>
+
+                
+                                                                                                                                                                                                                                            <div id="home-container" class="home-page-container" data-ana="HomePageView">
+            <noscript>
+                <div class="no-js-city-landing-link">
+                    <p>Javascript is disabled in your browser. Enable javascript for search functionality </p>
+                                                                        <div class="city-dropdown-country-container">
+                                <div class="city-dropdown-country-head flag-india-small">INDIA</div>
+                                <div class="city-dropdown-top-cities-container">
+                                                                            <a href="/agra" data-slug="agra" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Agra
+                                        </a>
+                                                                            <a href="/ahmedabad" data-slug="ahmedabad" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Ahmedabad
+                                        </a>
+                                                                            <a href="/allahabad" data-slug="allahabad" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Allahabad
+                                        </a>
+                                                                            <a href="/amritsar" data-slug="amritsar" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Amritsar
+                                        </a>
+                                                                            <a href="/aurangabad" data-slug="aurangabad" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Aurangabad
+                                        </a>
+                                                                            <a href="/bangalore" data-slug="bangalore" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Bangalore
+                                        </a>
+                                                                            <a href="/bhopal" data-slug="bhopal" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Bhopal
+                                        </a>
+                                                                            <a href="/chandigarh" data-slug="chandigarh" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Chandigarh
+                                        </a>
+                                                                            <a href="/chennai" data-slug="chennai" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Chennai
+                                        </a>
+                                                                            <a href="/coimbatore" data-slug="coimbatore" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Coimbatore
+                                        </a>
+                                                                            <a href="/delhi" data-slug="delhi" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Delhi
+                                        </a>
+                                                                            <a href="/ernakulam" data-slug="ernakulam" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Ernakulam
+                                        </a>
+                                                                            <a href="/faridabad" data-slug="faridabad" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Faridabad
+                                        </a>
+                                                                            <a href="/ghaziabad" data-slug="ghaziabad" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Ghaziabad
+                                        </a>
+                                                                            <a href="/gurgaon" data-slug="gurgaon" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Gurgaon
+                                        </a>
+                                                                            <a href="/hyderabad" data-slug="hyderabad" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Hyderabad
+                                        </a>
+                                                                            <a href="/indore" data-slug="indore" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Indore
+                                        </a>
+                                                                            <a href="/jaipur" data-slug="jaipur" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Jaipur
+                                        </a>
+                                                                            <a href="/jodhpur" data-slug="jodhpur" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Jodhpur
+                                        </a>
+                                                                            <a href="/kanpur" data-slug="kanpur" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Kanpur
+                                        </a>
+                                                                            <a href="/kolkata" data-slug="kolkata" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Kolkata
+                                        </a>
+                                                                            <a href="/lucknow" data-slug="lucknow" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Lucknow
+                                        </a>
+                                                                            <a href="/ludhiana" data-slug="ludhiana" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Ludhiana
+                                        </a>
+                                                                            <a href="/meerut" data-slug="meerut" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Meerut
+                                        </a>
+                                                                            <a href="/mohali" data-slug="mohali" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Mohali
+                                        </a>
+                                                                            <a href="/mumbai" data-slug="mumbai" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Mumbai
+                                        </a>
+                                                                            <a href="/mysore" data-slug="mysore" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Mysore
+                                        </a>
+                                                                            <a href="/nagpur" data-slug="nagpur" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Nagpur
+                                        </a>
+                                                                            <a href="/nashik" data-slug="nashik" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Nashik
+                                        </a>
+                                                                            <a href="/navi-mumbai" data-slug="navi-mumbai" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Navi Mumbai
+                                        </a>
+                                                                            <a href="/noida" data-slug="noida" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Noida
+                                        </a>
+                                                                            <a href="/panchkula" data-slug="panchkula" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Panchkula
+                                        </a>
+                                                                            <a href="/patna" data-slug="patna" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Patna
+                                        </a>
+                                                                            <a href="/puducherry" data-slug="puducherry" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Puducherry
+                                        </a>
+                                                                            <a href="/pune" data-slug="pune" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Pune
+                                        </a>
+                                                                            <a href="/raipur" data-slug="raipur" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Raipur
+                                        </a>
+                                                                            <a href="/rajkot" data-slug="rajkot" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Rajkot
+                                        </a>
+                                                                            <a href="/ranchi" data-slug="ranchi" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Ranchi
+                                        </a>
+                                                                            <a href="/surat" data-slug="surat" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Surat
+                                        </a>
+                                                                            <a href="/thane" data-slug="thane" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Thane
+                                        </a>
+                                                                            <a href="/thiruvananthapuram" data-slug="thiruvananthapuram" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Thiruvananthapuram
+                                        </a>
+                                                                            <a href="/vadodara" data-slug="vadodara" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Vadodara
+                                        </a>
+                                                                            <a href="/varanasi" data-slug="varanasi" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Varanasi
+                                        </a>
+                                                                            <a href="/vijayawada" data-slug="vijayawada" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Vijayawada
+                                        </a>
+                                                                            <a href="/visakhapatnam" data-slug="visakhapatnam" data-country="india" class="city-dropdown-option" target="_blank">
+                                            Visakhapatnam
+                                        </a>
+                                                                        <div class="clear"></div>
+                                </div>
+                            </div>
+                                                                                                <div class="city-dropdown-country-container">
+                                <div class="city-dropdown-country-head flag-brazil-small">BRAZIL</div>
+                                <div class="city-dropdown-top-cities-container">
+                                                                            <a href="/rio-de-janeiro" data-slug="rio-de-janeiro" data-country="brazil" class="city-dropdown-option" target="_blank">
+                                            Rio de Janeiro
+                                        </a>
+                                                                            <a href="/são-paulo" data-slug="são-paulo" data-country="brazil" class="city-dropdown-option" target="_blank">
+                                            São Paulo
+                                        </a>
+                                                                        <div class="clear"></div>
+                                </div>
+                            </div>
+                                                                                                <div class="city-dropdown-country-container">
+                                <div class="city-dropdown-country-head flag-indonesia-small">INDONESIA</div>
+                                <div class="city-dropdown-top-cities-container">
+                                                                            <a href="/bogor" data-slug="bogor" data-country="indonesia" class="city-dropdown-option" target="_blank">
+                                            Bogor
+                                        </a>
+                                                                            <a href="/depok" data-slug="depok" data-country="indonesia" class="city-dropdown-option" target="_blank">
+                                            Depok
+                                        </a>
+                                                                            <a href="/jakarta" data-slug="jakarta" data-country="indonesia" class="city-dropdown-option" target="_blank">
+                                            Jakarta
+                                        </a>
+                                                                            <a href="/south-tangerang" data-slug="south-tangerang" data-country="indonesia" class="city-dropdown-option" target="_blank">
+                                            South Tangerang
+                                        </a>
+                                                                            <a href="/tangerang" data-slug="tangerang" data-country="indonesia" class="city-dropdown-option" target="_blank">
+                                            Tangerang
+                                        </a>
+                                                                        <div class="clear"></div>
+                                </div>
+                            </div>
+                                                                                                <div class="city-dropdown-country-container">
+                                <div class="city-dropdown-country-head flag-malaysia-small">MALAYSIA</div>
+                                <div class="city-dropdown-top-cities-container">
+                                                                            <a href="/malaysia/kuala-lumpur" data-slug="kuala-lumpur" data-country="malaysia" class="city-dropdown-option" target="_blank">
+                                            Kuala Lumpur
+                                        </a>
+                                                                            <a href="/malaysia/petaling-jaya" data-slug="petaling-jaya" data-country="malaysia" class="city-dropdown-option" target="_blank">
+                                            Petaling Jaya
+                                        </a>
+                                                                            <a href="/malaysia/puchong" data-slug="puchong" data-country="malaysia" class="city-dropdown-option" target="_blank">
+                                            Puchong
+                                        </a>
+                                                                            <a href="/malaysia/shah-alam" data-slug="shah-alam" data-country="malaysia" class="city-dropdown-option" target="_blank">
+                                            Shah Alam
+                                        </a>
+                                                                            <a href="/malaysia/subang-jaya" data-slug="subang-jaya" data-country="malaysia" class="city-dropdown-option" target="_blank">
+                                            Subang Jaya
+                                        </a>
+                                                                        <div class="clear"></div>
+                                </div>
+                            </div>
+                                                                                                <div class="city-dropdown-country-container">
+                                <div class="city-dropdown-country-head flag-philippines-small">PHILIPPINES</div>
+                                <div class="city-dropdown-top-cities-container">
+                                                                            <a href="/philippines/batangas" data-slug="batangas" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Batangas
+                                        </a>
+                                                                            <a href="/philippines/caloocan" data-slug="caloocan" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Caloocan
+                                        </a>
+                                                                            <a href="/philippines/cavite" data-slug="cavite" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Cavite
+                                        </a>
+                                                                            <a href="/philippines/cebu-city" data-slug="cebu-city" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Cebu City
+                                        </a>
+                                                                            <a href="/philippines/las-pinas" data-slug="las-pinas" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Las Pinas
+                                        </a>
+                                                                            <a href="/philippines/makati" data-slug="makati" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Makati
+                                        </a>
+                                                                            <a href="/philippines/malabon" data-slug="malabon" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Malabon
+                                        </a>
+                                                                            <a href="/philippines/mandaluyong" data-slug="mandaluyong" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Mandaluyong
+                                        </a>
+                                                                            <a href="/philippines/manila" data-slug="manila" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Manila
+                                        </a>
+                                                                            <a href="/philippines/marikina" data-slug="marikina" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Marikina
+                                        </a>
+                                                                            <a href="/philippines/muntinlupa" data-slug="muntinlupa" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Muntinlupa
+                                        </a>
+                                                                            <a href="/philippines/navotas" data-slug="navotas" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Navotas
+                                        </a>
+                                                                            <a href="/philippines/paranaque" data-slug="paranaque" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Paranaque
+                                        </a>
+                                                                            <a href="/philippines/pasay" data-slug="pasay" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Pasay
+                                        </a>
+                                                                            <a href="/philippines/pasig" data-slug="pasig" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Pasig
+                                        </a>
+                                                                            <a href="/philippines/pateros" data-slug="pateros" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Pateros
+                                        </a>
+                                                                            <a href="/philippines/quezon-city" data-slug="quezon-city" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Quezon City
+                                        </a>
+                                                                            <a href="/philippines/san-juan" data-slug="san-juan" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            San Juan
+                                        </a>
+                                                                            <a href="/philippines/taguig" data-slug="taguig" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Taguig
+                                        </a>
+                                                                            <a href="/philippines/valenzuela" data-slug="valenzuela" data-country="philippines" class="city-dropdown-option" target="_blank">
+                                            Valenzuela
+                                        </a>
+                                                                        <div class="clear"></div>
+                                </div>
+                            </div>
+                                                                                                <div class="city-dropdown-country-container">
+                                <div class="city-dropdown-country-head flag-singapore-small">SINGAPORE</div>
+                                <div class="city-dropdown-top-cities-container">
+                                                                            <a href="/singapore" data-slug="singapore" data-country="singapore" class="city-dropdown-option" target="_blank">
+                                            Singapore
+                                        </a>
+                                                                        <div class="clear"></div>
+                                </div>
+                            </div>
+                                                            </div>
+            </noscript>
+            <a id="homepageTabClick" data-ana="PractoHomePageTabs:Tabs" href="javascript:void(0)"></a>
+            <div id="fullpage" class="fullpage-container">
+                <div class="section home-banner-container fp-auto-height">
+                    <div class="home-banner-body">
+                        <div class="header-container">
+                            <h1 class="new-header">Your home for health </h1>
+                        </div>
+                        <div class="u-t-center u-t-white u-t-bold home-search-title">Find and Book</div>
+                        <div class="omni-container" id="omniContainer"><div data-reactroot="" id="c-omni-container" class="c-omni-container--desktop"><div class="c-omni u-clearfix"><!-- react-empty: 3 --><!-- react-empty: 4 --><div class="c-omni__wrapper u-clearfix c-omni__wrapper--locality"><div class="c-omni-searchbox_wrapper"><span class="c-omni-searchbox__icon"><i class="icon-ic_location"></i></span><input data-qa-id="omni-searchbox-locality" class="c-omni-searchbox c-omni-searchbox--large" autocomplete="off" placeholder="Search Location" value="Bangalore"><span class="c-omni-searchbox__button-container"><span class="c-omni-searchbox__button c-omni-searchbox__button" data-qa-id="current_location"><i class="icon-ic_gps_system"></i><span class="c-omni-searchbox__button__text">Detect</span></span></span></div><!-- react-empty: 14 --></div><div class="c-omni__wrapper u-clearfix c-omni__wrapper--keyword"><div class="c-omni-searchbox_wrapper"><span class="c-omni-searchbox__icon"><i class="icon-ic_search"></i></span><input data-qa-id="omni-searchbox-keyword" class="c-omni-searchbox c-omni-searchbox--large" autocomplete="off" placeholder="Search doctors, clinics, hospitals, etc." value=""></div><!-- react-empty: 20 --></div></div></div></div>
+                        <div class="speciality-list-container">
+                            <span>Popular searches:</span>
+                                                                                               <a href="https://www.practo.com/bangalore/dermatologist" data-speciality="dermatologist" class="in-element country-based-element popular-speciality speciality-item js-speciality-item">Dermatologist</a>
+                                
+                                                                                               <a href="https://www.practo.com/bangalore/pediatrician" data-speciality="pediatrician" class="in-element country-based-element popular-speciality speciality-item js-speciality-item">Pediatrician</a>
+                                
+                                                                                               <a href="https://www.practo.com/bangalore/gynecologist-obstetrician" data-speciality="gynecologist-obstetrician" class="in-element country-based-element popular-speciality speciality-item js-speciality-item">Gynecologist/Obstetrician</a>
+                                
+                                                                                                                           <a href="https://www.practo.com/bangalore/dentist" data-speciality="dentist" class="ph-element country-based-element popular-speciality speciality-item js-speciality-item hide">Dentist</a>
+                                
+                                                                                               <a href="https://www.practo.com/bangalore/dermatologist" data-speciality="dermatologist" class="ph-element country-based-element popular-speciality speciality-item js-speciality-item hide">Dermatologist</a>
+                                
+                                                                                               <a href="https://www.practo.com/bangalore/psychiatrist" data-speciality="psychiatrist" class="ph-element country-based-element popular-speciality speciality-item js-speciality-item hide">Psychiatrist</a>
+                                
+                                                                                                                           <a href="https://www.practo.com/bangalore/dermatologist" data-speciality="dermatologist" class="id-element country-based-element popular-speciality speciality-item js-speciality-item hide">Dermatologist</a>
+                                
+                                                                                               <a href="https://www.practo.com/bangalore/dentist" data-speciality="dentist" class="id-element country-based-element popular-speciality speciality-item js-speciality-item hide">Dentist</a>
+                                
+                                                                                               <a href="https://www.practo.com/bangalore/pediatrician" data-speciality="pediatrician" class="id-element country-based-element popular-speciality speciality-item js-speciality-item hide">Pediatrician</a>
+                                
+                                                                                                                           <a href="https://www.practo.com/bangalore/dentist" data-speciality="dentist" class="sg-element country-based-element popular-speciality speciality-item js-speciality-item hide">Dentist</a>
+                                
+                                                                                               <a href="https://www.practo.com/bangalore/gynecologist" data-speciality="gynecologist" class="sg-element country-based-element popular-speciality speciality-item js-speciality-item hide">Gynecologist</a>
+                                
+                                                                                               <a href="https://www.practo.com/bangalore/pediatrician" data-speciality="pediatrician" class="sg-element country-based-element popular-speciality speciality-item js-speciality-item hide">Pediatrician</a>
+                                
+                                                                                                                           <a href="https://www.practo.com/bangalore/dentist" data-speciality="dentist" class="br-element country-based-element popular-speciality speciality-item js-speciality-item hide">Dentist</a>
+                                
+                                                                                               <a href="https://www.practo.com/bangalore/physiotherapist" data-speciality="physiotherapist" class="br-element country-based-element popular-speciality speciality-item js-speciality-item hide">Physiotherapist</a>
+                                
+                                                                                               <a href="https://www.practo.com/bangalore/orthodontist" data-speciality="orthodontist" class="br-element country-based-element popular-speciality speciality-item js-speciality-item hide">Orthodontist</a>
+                                
+                                                        <span id="otherSpecialitiesButton" class="speciality-item other-sepecialy-link"><span>Others</span><i class="icon-ic_down_cheveron"></i></span>
+                            <div id="specialityListContainer" class="other-speciality-container">
+                                <div class="speciality-column">
+                                    <div class="speciality-title">General Physicians and Specialists</div>
+                                                                                                                    <a href="https://www.practo.com/bangalore/ophthalmologist" data-speciality="ophthalmologist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Ophthalmologist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/dermatologist" data-speciality="dermatologist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Dermatologist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/cardiologist" data-speciality="cardiologist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Cardiologist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/psychiatrist" data-speciality="psychiatrist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Psychiatrist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/gastroenterologist" data-speciality="gastroenterologist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Gastroenterologist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/ear-nose-throat-ent-specialist" data-speciality="ear-nose-throat-ent-specialist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Ear-Nose-Throat (ENT)</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/gynecologist-obstetrician" data-speciality="gynecologist-obstetrician" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Gynecologist / Obstetrician</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/neurologist" data-speciality="neurologist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Neurologist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/urologist" data-speciality="urologist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Urologist</p>
+                                        </a>
+                                                                    </div>
+                                <div class="speciality-column">
+                                    <div class="speciality-title">Dentists</div>
+                                                                                                                    <a href="https://www.practo.com/bangalore/dentist" data-speciality="dentist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Dentist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/prosthodontist" data-speciality="prosthodontist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Prosthodontist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/orthodontist" data-speciality="orthodontist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Orthodontist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/pediatric-dentist" data-speciality="pediatric-dentist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Pediatric Dentist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/endodontist" data-speciality="endodontist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Endodontist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/implantologist" data-speciality="implantologist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Implantologist</p>
+                                        </a>
+                                                                    </div>
+                                <div class="speciality-column show-for-india">
+                                    <div class="speciality-title">Alternative Medicine Practitioners</div>
+                                                                                                                    <a href="https://www.practo.com/bangalore/ayurveda" data-speciality="ayurveda" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Ayurveda</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/homoeopath" data-speciality="homoeopath" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Homoeopath</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/siddha" data-speciality="siddha" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Siddha</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/unani" data-speciality="unani" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Unani</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/yoga-and-naturopathy" data-speciality="yoga-and-naturopathy" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Yoga &amp; Naturopathy</p>
+                                        </a>
+                                                                    </div>
+                                <div class="speciality-column">
+                                    <div class="speciality-title">Therapists &amp; Nutritionists</div>
+                                                                                                                    <a href="https://www.practo.com/bangalore/acupuncturist" data-speciality="acupuncturist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Acupuncturist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/physiotherapist" data-speciality="physiotherapist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Physiotherapist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/psychologist" data-speciality="psychologist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Psychologist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/audiologist" data-speciality="audiologist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Audiologist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/speech-therapist" data-speciality="speech-therapist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Speech Therapist</p>
+                                        </a>
+                                                                                                                    <a href="https://www.practo.com/bangalore/dietitian-nutritionist" data-speciality="dietitian-nutritionist" class="speciality-icons js-speciality-item">
+                                            <p class="test-name">Dietitian/Nutritionist</p>
+                                        </a>
+                                                                    </div>
+                            </div>
+                        </div>
+                                                    <div id="mydoctors-tab" class="mydoctors-tab-new">
+                                <div class="tests-container">
+                                    <div id="mydoctors-pane" class="mydoctors-pane-wrapper">
+    
+</div>
+                                </div>
+                            </div>
+                                            </div>
+                    <div id="homeBannerFooter" class="show-for-india home-banner-footer-container">
+                        <div class="home-banner-footer-wrapper">
+                            <a href="/consult?product=fabric&amp;attribution=Home_Banner_Footer" target="_blank" class="banner-footer-item">
+                                <i class="tab-icon icon-ic_chat"></i>
+                                <span>Consult online</span>
+                            </a>
+                                                        <a id="orderTab" href="/order?utm_source=practo_home" target="_blank" class="order-section banner-footer-item">
+                                <i class="tab-icon icon-ic_cart"></i>
+                                <span>Order medicines</span>
+                            </a>
+                                                        <a href="//drive.practo.com?utm_source=practo_home" target="_blank" class="banner-footer-item">
+                                <i class="tab-icon icon-ic_records_3"></i>
+                                <span>View medical records</span>
+                            </a>
+                                                        <a id="testTab" href="/labs?utm_source=practo_home" target="_blank" class="banner-footer-item">
+                                <i class="tab-icon icon-ic_lab_home"></i>
+                                <span>Book test</span>
+                            </a>
+                                                        <a href="/healthfeed?utm_source=practo_home" target="_blank" class="banner-footer-item">
+                                <i class="tab-icon icon-ic_read"></i>
+                                <span>Read articles</span>
+                            </a>
+                            <a href="/providers?utm_source=practo_home" target="_blank" class="banner-footer-item">
+                                <i class="tab-icon icon-ic_briefcase"></i>
+                                <span>For healthcare providers</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section home-details-wrapper">
+                    <div class="home-details-table-wrapper active" style="height: 600px;">
+                        <div class="home-details-section">
+                            <div class="home-details-section-wrapper left">
+                                <div class="home-details-section-details">
+                                    <div class="home-details-section-title">
+                                        <h2 class="u-d-inline">Instant appointment with doctors.</h2><h2 class="u-d-inline u-t-bold show-for-india">Guaranteed.</h2>
+                                    </div>
+                                    <div class="home-details-section-description">
+                                        <p class="hide-for-india  hide">Find the right doctor, clinic, medical centre or hospital, and book your appointment in seconds.</p>
+                                        <div>
+                                            <i class="icon-ic_done_open_system"></i>
+                                            <span class="u-t-bold">100,000</span>
+                                            <span>Verified doctors</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-ic_done_open_system"></i>
+                                            <span class="u-t-bold">3M+</span>
+                                            <span>Patient recommendations</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-ic_done_open_system"></i>
+                                            <span class="u-t-bold">25M</span>
+                                            <span>Patients/year</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-details-section-action">
+                                                                                <a class="e-btn e-btn-light js-speciality-item" data-speciality="doctors" href="https://www.practo.com/bangalore/doctors" target="_blank">Find me the right doctor</a>
+                                    </div>
+                                    <div id="bookReviews" class="review-wrapper show-for-india owl-carousel owl-loaded">
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1680px;"><div class="owl-item active" style="width: 420px;"><div class="u-t-grey">
+            <div class="review-star u-bottom-spacer u-text-green">
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+            </div>
+            <div class="review-text u-t-regular">
+                “Very helpful. Far easier than doing same things on computer. Allows quick and easy search with speedy booking. Even maintains history of doctors visited.”
+            </div>
+            <div>
+                
+                <span class="icon-ic_user_system icon-user"></span>
+                
+                <span class="u-t-regular u-inline-top review-user-name">Amit Sharma</span>
+            </div>
+        </div></div><div class="owl-item" style="width: 420px;"><div class="u-t-grey">
+            <div class="review-star u-bottom-spacer u-text-green">
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+            </div>
+            <div class="review-text u-t-regular">
+                “Boon for patients.God bless who made this app.I would not recover so soon if this app would not be there. Feedback- Practo has doctor for common disease or complications.It should focus on those complications which is uncommon because it is hard to find suitable doctor in some cases like Varicocele,Esinophill count increase”
+            </div>
+            <div>
+                
+                <span class="icon-ic_user_system icon-user"></span>
+                
+                <span class="u-t-regular u-inline-top review-user-name">Anoop Kumar</span>
+            </div>
+        </div></div><div class="owl-item" style="width: 420px;"><div class="u-t-grey">
+            <div class="review-star u-bottom-spacer u-text-green">
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+            </div>
+            <div class="review-text u-t-regular">
+                “Great app..get to know actual qualification of doctors n their alma mater n experience to judge the background..along with peoples review...have stopped calling n taking appointments..just practo it”
+            </div>
+            <div>
+                
+                <span class="icon-ic_user_system icon-user"></span>
+                
+                <span class="u-t-regular u-inline-top review-user-name">Deepak Kumar</span>
+            </div>
+        </div></div><div class="owl-item" style="width: 420px;"><div class="u-t-grey">
+            <div class="review-star u-bottom-spacer u-text-green">
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+            </div>
+            <div class="review-text u-t-regular">
+                “I had severe pain in chest as well blood in cough.  I searched through a lot of pulmonologists based on rankings and feedbacks and finally settled to consult Dr Indu Bubna.  She quickly diagnosed my disease as pulmonary embolism and I was admitted to ICU. Now its all fine. If i would have gotten late then I wouldn't be writing  this.  Thanks Practo!”
+            </div>
+            <div>
+                
+                <span class="icon-ic_user_system icon-user"></span>
+                
+                <span class="u-t-regular u-inline-top review-user-name">Anuupam Purohit</span>
+            </div>
+        </div></div></div></div><div class="owl-nav"><div class="owl-prev disabled"><i class="icon-ic_back_cheveron review-arrow-icon"></i></div><div class="owl-next"><i class="icon-ic_next_cheveron review-arrow-icon"></i></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                                </div>
+                            </div>
+                            <div class="home-image-container right">
+                                <div class="home-search-section home-illustration">
+                                    <img class="find-default-image  hide" src="/bundles/practopractoapp/images/homepage/in_phone.png">
+                                    <img class="find-default-image sg-element country-based-element hide" src="/bundles/practopractoapp/images/homepage/sg_phone.png">
+                                    <img class="find-default-image br-element country-based-element hide" src="/bundles/practopractoapp/images/homepage/br_phone.png">
+                                    <img class="find-default-image id-element country-based-element hide" src="/bundles/practopractoapp/images/homepage/id_phone.png">
+                                    <img class="find-default-image ph-element country-based-element hide" src="/bundles/practopractoapp/images/homepage/ph_phone.png">
+                                    <video data-keepplaying="" loop="true" id="findAnimation" class="video-element" autoplay="" width="320" height="480">
+                                        <source id="findAnimationSource" src="/bundles/practopractoapp/images/homepage/find_animation_last.webm" type="video/webm">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-logo-footer">
+                            <a href="/company/press" target="_blank" class="customer-logo-image fortune left"></a>
+                            <a href="/company/press" target="_blank" class="customer-logo-image tech-crunch left"></a>
+                            <a href="/company/press" target="_blank" class="customer-logo-image forbes left"></a>
+                            <a href="/company/press" target="_blank" class="customer-logo-image economic left"></a>
+                            <a href="/company/press" target="_blank" class="customer-logo-image country-based-element in-element country-based-element  wall-street left"></a>
+                            <a href="/company/press" target="_blank" class="customer-logo-image country-based-element in-element  times left"></a>
+                            <a href="/company/press" target="_blank" class="customer-logo-image intl-customer-logo logo sg-logo-1 country-based-element hide sg-element left"></a>
+                            <a href="/company/press" target="_blank" class="customer-logo-image intl-customer-logo sg-logo-2 country-based-element  hide sg-element left"></a>
+                            <a href="/company/press" target="_blank" class="customer-logo-image intl-customer-logo ph-logo-1 country-based-element  hide ph-element left"></a>
+                            <a href="/company/press" target="_blank" class="customer-logo-image intl-customer-logo ph-logo-2 country-based-element  hide ph-element left"></a>
+                            <a href="/company/press" target="_blank" class="customer-logo-image intl-customer-logo br-logo-1 country-based-element hide br-element left"></a>
+                            <a href="/company/press" target="_blank" class="customer-logo-image intl-customer-logo br-logo-2 country-based-element hide br-element left"></a>
+                            <a href="/company/press" target="_blank" class="customer-logo-image intl-customer-logo id-logo-1 country-based-element hide id-element left"></a>
+                            <a href="/company/press" target="_blank" class="customer-logo-image intl-customer-logo id-logo-2 country-based-element hide id-element left"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section home-details-wrapper show-for-india">
+                    <div class="home-details-table-wrapper active" style="height: 600px;">
+                        <div class="home-details-section">
+                            <div class="home-image-container left">
+                                <div class="home-consult-section home-illustration">
+                                    <img id="consultDefaultImage" src="/bundles/practopractoapp/images/homepage/consult.png" class="hide">
+                                    <video data-keepplaying="" loop="true" id="consultAnimation" class="" autoplay="" width="320" height="480">
+                                        <source id="consultAnimationSource" src="/bundles/practopractoapp/images/homepage/consult_animation_4.webm" type="video/webm">
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="home-details-section-wrapper right">
+                                <div class="home-details-section-details">
+                                    <div class="home-details-section-title">
+                                        <h2 class="u-d-inline">Skip the waiting room.</h2><br>
+                                        <h2 class="u-d-inline u-t-bold">Consult online.</h2>
+                                    </div>
+                                    <div class="home-details-section-description">
+                                        <div>
+                                            <i class="icon-ic_done_open_system"></i>
+                                            <span class="u-t-bold">3M+</span>
+                                            <span>patients helped</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-ic_done_open_system"></i>
+                                            <span>Verified doctors respond in </span>
+                                            <span class="u-t-bold">20 minutes</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-ic_done_open_system"></i>
+                                            <span class="u-t-bold">100%</span>
+                                            <span>private and confidential</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-details-section-action">
+                                        <a class="e-btn e-btn-light" href="/consult?product=fabric&amp;attribution=Home_Details_Section" target="_blank">Chat now</a>
+                                        <span id="doctorsOnline" class="doctors-online u-t-grey"><span class="u-pulse left"></span><span class="u-t-bold">24175</span><span> doctors online</span></span>
+                                    </div>
+                                    <div id="consultReviews" class="review-wrapper owl-carousel owl-loaded">
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1680px;"><div class="owl-item active" style="width: 420px;"><div class="u-t-grey">
+            <div class="review-star u-bottom-spacer u-text-green">
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+            </div>
+            <div class="review-text u-t-regular">
+                “All your health needs in one app. Online consultation for minor health issues, medicines etc.”
+            </div>
+            <div>
+                
+                <span class="icon-ic_user_system icon-user"></span>
+                
+                <span class="u-t-regular u-inline-top review-user-name">Abhiram Gurijala</span>
+            </div>
+        </div></div><div class="owl-item" style="width: 420px;"><div class="u-t-grey">
+            <div class="review-star u-bottom-spacer u-text-green">
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+            </div>
+            <div class="review-text u-t-regular">
+                “Very reliable app! There r many such apps in the market but Practo is very reliable. I love the feature of free questions.This feature gives an idea of health issue you are facing and you can accordingly consult the relevant doctor. Thank u team Practo for putting this together.”
+            </div>
+            <div>
+                
+                <span class="icon-ic_user_system icon-user"></span>
+                
+                <span class="u-t-regular u-inline-top review-user-name">Bhawana Rastogi</span>
+            </div>
+        </div></div><div class="owl-item" style="width: 420px;"><div class="u-t-grey">
+            <div class="review-star u-bottom-spacer u-text-green">
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+            </div>
+            <div class="review-text u-t-regular">
+                “It has excellent doctors, excellent user interface, very very user friendly, has options for free consultations also, even the paid options have excellent worth.  On top of everything it also gives you tips to live a healthy life for free. And these are not just some paid news, but genuine articles on tips and tricks that you can actually apply to live a healthy life.”
+            </div>
+            <div>
+                
+                <span class="icon-ic_user_system icon-user"></span>
+                
+                <span class="u-t-regular u-inline-top review-user-name">Anurag Bansal</span>
+            </div>
+        </div></div><div class="owl-item" style="width: 420px;"><div class="u-t-grey">
+            <div class="review-star u-bottom-spacer u-text-green">
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+            </div>
+            <div class="review-text u-t-regular">
+                “It serve only what we need. Very simple and more than sufficient for getting solution for any medical queries.”
+            </div>
+            <div>
+                
+                <span class="icon-ic_user_system icon-user"></span>
+                
+                <span class="u-t-regular u-inline-top review-user-name">Venu Gowda</span>
+            </div>
+        </div></div></div></div><div class="owl-nav"><div class="owl-prev disabled"><i class="icon-ic_back_cheveron review-arrow-icon"></i></div><div class="owl-next"><i class="icon-ic_next_cheveron review-arrow-icon"></i></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section health-feed-container home-details-wrapper show-for-india">
+                    <div id="healthFeedContainer" class="home-details-table-wrapper active" style="height: 600px;">
+    <div>
+        <div class="home-fit-header u-t-center u-t-bold">
+            <h2>Read top articles from health experts</h2>
+        </div>
+        <div id="articlesWrapper" class="articles-wrapper owl-carousel owl-loaded">
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1442px;"><div class="owl-item active" style="width: 288.333px;"><a href="https://www.practo.com/healthfeed/6-simple-yoga-asanas-for-beginners-5935/post" target="_blank" class="home-fit-body-container">
+                    <div class="home-fit-body">
+                        <div class="article-image-wrapper">
+                            <img src="https://www.practostatic.com/fit/819a73c1539c0295c506a1bcb11b2eb20b38a58e">
+                        </div>
+                        <div class="fit-details-wrapper">
+                            <div class="u-t-bold home-fit-title">
+                                6 Simple Yoga Asanas for Beginners
+                            </div>
+                            <div class="home-fit-author u-t-bold">
+                                <span>Ms. Swati Kapoor</span>,
+                                <span>Dietitian/Nutritionist</span>
+                            </div>
+                            <div>
+                                <span class="u-t-bold u-t-regular u-t-grey">611</span>
+                                <span class="u-t-regular u-t-grey u-t-bold">Likes</span>
+                                <span class="bullet-separator">●</span>
+                                <span class="u-left-spacer u-t-bold u-t-regular u-t-grey">41957</span>
+                                <span class="u-t-regular u-t-grey u-t-bold">Views</span>
+                            </div>
+                        </div>
+                    </div>
+                </a></div><div class="owl-item active" style="width: 288.333px;"><a href="https://www.practo.com/healthfeed/how-to-straighten-your-hair-naturally-26305/post" target="_blank" class="home-fit-body-container">
+                    <div class="home-fit-body">
+                        <div class="article-image-wrapper">
+                            <img src="https://www.practostatic.com/fit/1248187c88fa20fb11116f02779b39d48c3c9b3d">
+                        </div>
+                        <div class="fit-details-wrapper">
+                            <div class="u-t-bold home-fit-title">
+                                How to Straighten Your Hair - Naturally!
+                            </div>
+                            <div class="home-fit-author u-t-bold">
+                                <span>Dr. Sachin Goel</span>,
+                                <span>Hair Transplant Surgeon</span>
+                            </div>
+                            <div>
+                                <span class="u-t-bold u-t-regular u-t-grey">475</span>
+                                <span class="u-t-regular u-t-grey u-t-bold">Likes</span>
+                                <span class="bullet-separator">●</span>
+                                <span class="u-left-spacer u-t-bold u-t-regular u-t-grey">39960</span>
+                                <span class="u-t-regular u-t-grey u-t-bold">Views</span>
+                            </div>
+                        </div>
+                    </div>
+                </a></div><div class="owl-item active" style="width: 288.333px;"><a href="https://www.practo.com/healthfeed/how-to-lose-weight-with-hypothyroidism-3425/post" target="_blank" class="home-fit-body-container">
+                    <div class="home-fit-body">
+                        <div class="article-image-wrapper">
+                            <img src="https://www.practostatic.com/fit/eb36658084aadbdf2768c059c3793479793e8f78">
+                        </div>
+                        <div class="fit-details-wrapper">
+                            <div class="u-t-bold home-fit-title">
+                                How to Lose Weight With Hypothyroidism?
+                            </div>
+                            <div class="home-fit-author u-t-bold">
+                                <span>Ms. Swati Kapoor</span>,
+                                <span>Dietitian/Nutritionist</span>
+                            </div>
+                            <div>
+                                <span class="u-t-bold u-t-regular u-t-grey">313</span>
+                                <span class="u-t-regular u-t-grey u-t-bold">Likes</span>
+                                <span class="bullet-separator">●</span>
+                                <span class="u-left-spacer u-t-bold u-t-regular u-t-grey">267634</span>
+                                <span class="u-t-regular u-t-grey u-t-bold">Views</span>
+                            </div>
+                        </div>
+                    </div>
+                </a></div><div class="owl-item active" style="width: 288.333px;"><a href="https://www.practo.com/healthfeed/workplace-ergonomics-to-prevent-neck-and-back-pain-24396/post" target="_blank" class="home-fit-body-container">
+                    <div class="home-fit-body">
+                        <div class="article-image-wrapper">
+                            <img src="https://www.practostatic.com/fit/2708bfab08caf4109bb3c6f003602985e7a54b85">
+                        </div>
+                        <div class="fit-details-wrapper">
+                            <div class="u-t-bold home-fit-title">
+                                Workplace Ergonomics to Prevent Neck and Back Pain
+                            </div>
+                            <div class="home-fit-author u-t-bold">
+                                <span>Dr. Uthra Mohan</span>,
+                                <span>Physiotherapist</span>
+                            </div>
+                            <div>
+                                <span class="u-t-bold u-t-regular u-t-grey">279</span>
+                                <span class="u-t-regular u-t-grey u-t-bold">Likes</span>
+                                <span class="bullet-separator">●</span>
+                                <span class="u-left-spacer u-t-bold u-t-regular u-t-grey">9661</span>
+                                <span class="u-t-regular u-t-grey u-t-bold">Views</span>
+                            </div>
+                        </div>
+                    </div>
+                </a></div><div class="owl-item" style="width: 288.333px;"><a href="https://www.practo.com/healthfeed/habits-that-make-you-fat-211/post" target="_blank" class="home-fit-body-container">
+                    <div class="home-fit-body">
+                        <div class="article-image-wrapper">
+                            <img src="https://www.practostatic.com/fit/1df7f169be2847c0508db4c7e61f90596774a288">
+                        </div>
+                        <div class="fit-details-wrapper">
+                            <div class="u-t-bold home-fit-title">
+                                Habits That Make You Fat
+                            </div>
+                            <div class="home-fit-author u-t-bold">
+                                <span>Ms. Swati Kapoor</span>,
+                                <span>Dietitian/Nutritionist</span>
+                            </div>
+                            <div>
+                                <span class="u-t-bold u-t-regular u-t-grey">273</span>
+                                <span class="u-t-regular u-t-grey u-t-bold">Likes</span>
+                                <span class="bullet-separator">●</span>
+                                <span class="u-left-spacer u-t-bold u-t-regular u-t-grey">33346</span>
+                                <span class="u-t-regular u-t-grey u-t-bold">Views</span>
+                            </div>
+                        </div>
+                    </div>
+                </a></div></div></div><div class="owl-nav"><div class="owl-prev disabled"><div class="icon-ic_dropdown"></div></div><div class="owl-next"><div class="icon-ic_dropdown"></div></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+        <div class="u-t-center home-details-section-action">
+            <a class="e-btn e-btn-light" href="/healthfeed?utm_source=practo_home" target="_blank">More articles</a>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="section home-details-wrapper show-for-india">
+                    <div class="home-details-table-wrapper active" style="height: 600px;">
+                        <div class="home-details-section">
+                            <div class="home-details-section-wrapper home-order-section-wrapper left">
+                                <div class="home-details-section-details">
+                                    <div class="home-details-section-title">
+                                        <h2 class="u-d-inline">Get all your medicines.</h2><br>
+                                        <h2 class="u-d-inline u-t-bold">Everytime. On time.</h2>
+                                    </div>
+                                    <div class="home-details-section-description">
+                                        <div>
+                                            <i class="icon-ic_done_open_system"></i>
+                                            <span>Guaranteed availability</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-ic_done_open_system"></i>
+                                            <span>Over</span>
+                                            <span class="u-t-bold">130,000+</span>
+                                            <span>genuine medicines</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-ic_done_open_system"></i>
+                                            <span>Home delivery in </span>
+                                            <span class="u-t-bold">24hrs</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-details-section-action order-section">
+                                        <a class="e-btn e-btn-light" href="/order?utm_source=practo_home" target="_blank">Order Medicines</a>
+                                        <div id="lastOrderInfo" class="last-order-info"><div class="u-circle"><div class="u-triangle"></div></div><span class="order-delivered-text">Last order delivered <span class="u-t-bold">5m </span> ago in Sembakkam, Chennai</span></div>
+                                    </div>
+                                    <div id="comingOrderInfo" class="coming-info hide">Coming soon to your city...</div>
+                                    <div id="orderReviews" class="review-wrapper owl-carousel owl-loaded">
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1680px;"><div class="owl-item active" style="width: 420px;"><div class="u-t-grey">
+            <div class="review-star u-bottom-spacer u-text-green">
+                
+            </div>
+            <div class="review-text u-t-regular">
+                “Excellent service, App is user friendly compared to other similar agencies. Text message to customers at each stage from placing order to delivery is very informative.”
+            </div>
+            <div>
+                
+                <span class="icon-ic_user_system icon-user"></span>
+                
+                <span class="u-t-regular u-inline-top review-user-name">Gurudutt. K.V</span>
+            </div>
+        </div></div><div class="owl-item" style="width: 420px;"><div class="u-t-grey">
+            <div class="review-star u-bottom-spacer u-text-green">
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+            </div>
+            <div class="review-text u-t-regular">
+                “Helpful I've been living in india for last 8 years and I was still struggling finding good specialist like gynecologist, dermatologist and dentist. Not anymore! No waste of time anymore, prescription is also available on the app, reminding you what to take when to take it, a link to Uber is also available after booking an appointment, it's really the app to have! Clever!”
+            </div>
+            <div>
+                
+                <span class="icon-ic_user_system icon-user"></span>
+                
+                <span class="u-t-regular u-inline-top review-user-name">Zoe Henderyckx</span>
+            </div>
+        </div></div><div class="owl-item" style="width: 420px;"><div class="u-t-grey">
+            <div class="review-star u-bottom-spacer u-text-green">
+                
+            </div>
+            <div class="review-text u-t-regular">
+                “Extremely happy and satisfied with the service of Practo medicines delivery. Prompt response and delivery was made 1 day ahead of due date. A special mention goes to Siddesh, the pharmacist for faster delivery. Keep up the good work, Practo!!”
+            </div>
+            <div>
+                
+                <span class="icon-ic_user_system icon-user"></span>
+                
+                <span class="u-t-regular u-inline-top review-user-name">Lalitha Gunadas</span>
+            </div>
+        </div></div><div class="owl-item" style="width: 420px;"><div class="u-t-grey">
+            <div class="review-star u-bottom-spacer u-text-green">
+                
+            </div>
+            <div class="review-text u-t-regular">
+                “Very Helpful! I hope a lot more doctors come onboard soon.The Doctor's tool is also very helpful, apart from the app.The prescriptions are all on mail, and messages, which makes things very easy to use and track. Great job overall!”
+            </div>
+            <div>
+                
+                <span class="u-t-regular u-inline-top review-user-name"></span>
+            </div>
+        </div></div></div></div><div class="owl-nav"><div class="owl-prev disabled"><i class="icon-ic_back_cheveron review-arrow-icon"></i></div><div class="owl-next"><i class="icon-ic_next_cheveron review-arrow-icon"></i></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                                </div>
+                            </div>
+                            <div class="home-image-container right">
+                                <div class="home-order-section home-illustration"><img src="/bundles/practopractoapp/images/homepage/order.svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section home-details-wrapper phr-wrapper show-for-india">
+                    <div class="home-details-table-wrapper active" style="height: 600px;">
+                        <div class="home-details-section">
+                            <div class="home-image-container left">
+                                <div class="home-record-section home-illustration"><img src="/bundles/practopractoapp/images/homepage/phr.svg"></div>
+                            </div>
+                            <div class="home-details-section-wrapper home-record-section-wrapper right">
+                                <div class="home-details-section-details">
+                                    <div class="home-details-section-title">
+                                        <h2 class="u-d-inline">All your medical records</h2><br>
+                                        <h2 class="u-d-inline u-t-bold">In one secure app.</h2>
+                                    </div>
+                                    <div class="home-details-section-description">
+                                        <div>
+                                            <i class="icon-ic_done_open_system"></i>
+                                            <span>256-bit end to end encryption</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-ic_done_open_system"></i>
+                                            <span>Records are accessible only by you</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-ic_done_open_system"></i>
+                                            <span>Access your records across </span>
+                                            <span class="u-t-bold">8000+ </span>
+                                            <span>centers</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-details-section-action">
+                                        <a class="e-btn e-btn-light" href="//drive.practo.com/login?utm_source=practo_home" target="_blank">Find out more</a>
+                                        <div id="recordSharedInfo" class="records-shared-info u-t-grey">
+                                            <div id="recordsCounter" class="records-counter odometer odometer-auto-theme"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">4</span></span></span></span></span><span class="odometer-formatting-mark">,</span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">8</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">5</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span><span class="odometer-formatting-mark">,</span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">5</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">9</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">5</span></span></span></span></span></div></div>
+                                            <div>Records securely shared by doctors with patients</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section home-details-wrapper">
+                    <div class="home-details-table-wrapper active" style="height: 600px;">
+                        <div class="home-details-section">
+                            <div class="home-details-section-wrapper left">
+                                <div class="home-details-section-details">
+                                    <div class="home-details-section-title">
+                                        <h2 class="u-d-inline">Leading Healthcare Providers.</h2><br>
+                                        <h2 class="u-d-inline u-t-bold">Trust us for Business</h2>
+                                    </div>
+                                    <div class="home-details-section-description">
+                                        <div>
+                                            <i class="icon-ic_done_open_system"></i>
+                                            <span>Get seen by </span>
+                                            <span class="u-t-bold">25M+ </span>
+                                            <span>patients on Practo.com</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-ic_done_open_system"></i>
+                                            <span>The most advanced software for clinics and hospitals</span>
+                                        </div>
+                                        <div>
+                                            <i class="icon-ic_done_open_system"></i>
+                                            <span>State of the art business analytics for enterprises</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-details-section-action">
+                                        <a class="e-btn e-btn-light" href="/providers?utm_source=practo_home" target="_blank">Learn more</a>
+                                    </div>
+                                    <div id="providerReviews" class="review-wrapper show-for-india owl-carousel owl-loaded">
+
+    
+        
+    
+
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 420px;"><div class="owl-item active" style="width: 420px;"><div class="u-t-grey">
+            <div class="review-star u-bottom-spacer u-text-green">
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+                    <i class="icon-ic_star_solid icon-star"></i>
+                
+            </div>
+            <div class="review-text u-t-regular">
+                “Enjoying all the programs that too through one app.but for Physio people pls add a column for notes instead of prescription.”
+            </div>
+            <div>
+                
+                <span class="icon-ic_user_system icon-user"></span>
+                
+                <span class="u-t-regular u-inline-top review-user-name">Nidhi Kumar</span>
+            </div>
+        </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev disabled"><i class="icon-ic_back_cheveron review-arrow-icon"></i></div><div class="owl-next disabled"><i class="icon-ic_next_cheveron review-arrow-icon"></i></div></div><div class="owl-dots disabled"><div class="owl-dot active"><span></span></div></div></div>
+                                </div>
+                            </div>
+                            <div class="home-image-container right">
+                                <div class="home-business-section home-illustration">
+                                    <img class="country-based-element show-for-india in-element" src="/bundles/practopractoapp/images/homepage/for_providers.png">
+                                    <img class="country-based-element ph-element hide" src="/bundles/practopractoapp/images/homepage/provider_ph.png">
+                                    <img class="country-based-element br-element hide" src="/bundles/practopractoapp/images/homepage/provider_br.png">
+                                    <img class="country-based-element country-based-element sg-element hide" src="/bundles/practopractoapp/images/homepage/provider_sg.png">
+                                    <img class="id-element country-based-element hide" src="/bundles/practopractoapp/images/homepage/provider_id.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-logo-footer show-for-india">
+                            <div class="customer-logo-image hospital-logo-image customer-logo-image-7 left"></div>
+                            <div class="customer-logo-image hospital-logo-image customer-logo-image-8 left"></div>
+                            <div class="customer-logo-image hospital-logo-image customer-logo-image-9 left"></div>
+                            <div class="customer-logo-image hospital-logo-image customer-logo-image-11 left"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fp-auto-height section home-details-wrapper home-download-section-wrapper">
+                    <div class="home-details-section">
+                        <div class="home-image-container download-image-wrapper left">
+                            <div class="home-download-section home-illustration">
+                                <img class="show-for-india" src="/bundles/practopractoapp/images/homepage/download.png">
+                                <img class="hide-for-india hide" src="/bundles/practopractoapp/images/homepage/international_download.png">
+                            </div>
+                        </div>
+                        <div class="home-details-section-wrapper download-details-wrapper right">
+                            <div class="u-t-bold home-details-section-title">
+                                Download the Practo app                            </div>
+                            <div class="home-details-section-description">
+                                <p class="hide-for-india hide">
+                                    Like millions of Practo users, book your appointments anytime, anywhere.                                </p>
+                                <ul class="download-app-info show-for-india">
+                                    <li>
+                                        <i class="icon-ic_done_open_system"></i>
+                                        <span>Book appointments and lab tests</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-ic_done_open_system"></i>
+                                        <span>Order medicines</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-ic_done_open_system"></i>
+                                        <span>Consult doctors online</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-ic_done_open_system"></i>
+                                        <span>Set medicine reminders</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-ic_done_open_system"></i>
+                                        <span>Store health records</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-ic_done_open_system"></i>
+                                        <span>Read health tips</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="app-download-section">
+                                <div>
+                                    <a class="app-link-container" href="https://app.appsflyer.com/com.practo.fabric?pid=web&amp;c=homepage" target="_blank">
+                                      <img src="bundles/practopractoapp/images/marketing/google_badge.png" alt="Get it on Google Play" title="Get it on Google Play">
+                                    </a>
+                                    <a class="app-link-container" href="https://app.appsflyer.com/id953772015?pid=web&amp;c=homepage" target="_blank">
+                                      <img src="bundles/practopractoapp/images/marketing/appstore_badge.png" alt="Get it on App Store" title="Get it on App Store">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="country-container">
+                    <div class="country-links-wrapper">
+                                                                                                                    <div class="link"><a href="/india" target="_blank" data-ana="FooterLinksClick:India:Countries"><span class="country-flag flag-india-small"></span><span class="country-name">India</span></a></div>
+                                                                                                                                                <div class="link"><a href="/singapore" target="_blank" data-ana="FooterLinksClick:Singapore:Countries"><span class="country-flag flag-singapore-small"></span><span class="country-name">Singapore</span></a></div>
+                                                                                                                                                <div class="link"><a href="/philippines" target="_blank" data-ana="FooterLinksClick:Philippines:Countries"><span class="country-flag flag-philippines-small"></span><span class="country-name">Philippines</span></a></div>
+                                                                                                                                                <div class="link"><a href="/indonesia" target="_blank" data-ana="FooterLinksClick:Indonesia:Countries"><span class="country-flag flag-indonesia-small"></span><span class="country-name">Indonesia</span></a></div>
+                                                                                                                                                <div class="link"><a href="/brazil" target="_blank" data-ana="FooterLinksClick:Brazil:Countries"><span class="country-flag flag-brazil-small"></span><span class="country-name">Brazil</span></a></div>
+                                                                        </div>
+                </div>
+                                                                                                    <div class="section fp-auto-height footer-block clearfix">
+    <div class="pr-footer-new clearfix">
+        <div class="page-body-container">
+            <div class="pr-footer-column">
+                <div class="pr-footer-column-head">
+                    <h6 class="collapsed">Practo</h6>
+                </div>
+                <div class="pr-footer-column-links responsive-hide">
+                    <div><a href="/company/about" target="_blank" data-ana="FooterLinksClick:About:Practo">About</a></div>
+                    <div><a href="//blog.practo.com" target="_blank" data-ana="FooterLinksClick:Blog:Practo">Blog</a></div>
+                    <div><a href="/company/careers" target="_blank" data-ana="FooterLinksClick:Careers:Practo">Careers</a></div>
+                    <div><a href="/company/press" target="_blank" data-ana="FooterLinksClick:Press:Practo">Press</a></div>
+                    <div><a href="/company/contact" target="_blank" data-ana="FooterLinksClick:Contact Us:Practo">Contact Us</a></div>
+                </div>
+            </div>
+            <div class="pr-footer-column">
+                <div class="pr-footer-column-head">
+                    <h6 class="collapsed">For patients</h6>
+                </div>
+                <div class="pr-footer-column-links responsive-hide">
+                                            <div><a href="/consult/direct/new_consultation?product=fabric&amp;attribution=Footer" target="_blank" data-ana="FooterLinksClick:Ask free health questions:For Patients">Ask free health questions</a></div>
+                                                                                                                                                                <div><a href="/bangalore/doctors" data-ana="FooterLinksClick:Search for Doctors:For Patients">Search for doctors</a></div>
+                        <div><a href="/bangalore/clinics" data-ana="FooterLinksClick:Search for Clinics:For Patients">Search for clinics</a></div>
+                        <div><a href="/bangalore/hospitals" data-ana="FooterLinksClick:Search for Hospitals:For Patients">Search for hospitals</a></div>
+                                                    <div><a href="/bangalore/diagnostics" data-ana="FooterLinksClick:Search for Diagnostics:For Patients">Search for diagnostics</a></div>
+                                                                                        <div><a href="/healthfeed" target="_blank" data-ana="FooterLinksClick:Health Feed:For Patients">Read health articles</a></div>
+                        <div><a href="/consult?product=fabric&amp;attribution=Footer" target="_blank" data-ana="FooterLinksClick:Consult Feed:For Patients">Consult a doctor</a></div>
+                        <div><a href="https://www.practo.com/order?utm_source=practohomepage&amp;utm_medium=referral&amp;utm_campaign=practohomepageradio" target="_blank">Order medicines</a></div>
+                                        <div><a href="/medicine-info" target="_blank" data-ana="FooterLinksClick:Read about medicine:For Patients">Read about medicines</a></div>
+                    <div><a href="/drive" target="_blank" data-ana="FooterLinksClick:Practo drive:For Patients">Practo drive</a></div>
+                    <div><a href="/health-app" target="_blank" data-ana="FooterLinksClick:Health App:For Patients">Health app</a></div>
+                                    </div>
+            </div>
+            <div class="pr-footer-column">
+                <div class="pr-footer-column-head">
+                    <h6 class="collapsed">For doctors</h6>
+                </div>
+                <div class="pr-footer-column-links responsive-hide">
+                    <div><a href="/providers/doctors/consult" target="_blank" data-ana="FooterLinksClick:Practo Consult:For Doctors">Practo Consult</a></div>
+                    <div><a href="/providers/doctors/health-feed" target="_blank" data-ana="FooterLinksClick:Practo Health Feed:For Doctors">Practo Health Feed</a></div>
+                    <div><a href="/providers/doctors/profile" target="_blank" data-ana="FooterLinksClick:Practo Profile:For Doctors">Practo Profile</a></div>
+                </div>
+                <div class="pr-footer-column-head">
+                    <h6 class="collapsed">For clinics</h6>
+                </div>
+                <div class="pr-footer-column-links responsive-hide">
+                    <div><a href="/providers/clinics/ray" target="_blank" data-ana="FooterLinksClick:Practo Ray:For Clinics">Ray by Practo</a></div>
+                    <div><a href="/providers/clinics/reach" target="_blank" data-ana="FooterLinksClick:Practo Reach:For Clinics">Practo Reach</a></div>
+                    <div><a href="/providers/clinics/ray/features#rayTab" target="_blank" data-ana="FooterLinksClick:Practo Tab:For Clinics">Ray Tab</a></div>
+                    <div><a href="/practo-pro-app" target="_blank" data-ana="FooterLinksClick:Practo Pro:For Doctors">Practo Pro</a></div>
+                </div>
+            </div>
+            <div class="pr-footer-column">
+                <div class="pr-footer-column-head">
+                    <h6 class="collapsed">For hospitals</h6>
+                </div>
+                <div class="pr-footer-column-links responsive-hide">
+                    <div><a href="/providers/hospitals/insta" target="_blank" data-ana="FooterLinksClick:Insta:For Hospitals">Insta by Practo</a></div>
+                    <div><a href="/providers/hospitals/qikwell" target="_blank" data-ana="FooterLinksClick:Qikwell:For Hospitals">Qikwell by Practo</a></div>
+                    <div><a href="/providers/hospitals/querent" target="_blank" data-ana="FooterLinksClick:Querent:For Hospitals">Querent by Practo</a></div>
+                    <div><a href="/providers/hospitals/profile" target="_blank" data-ana="FooterLinksClick:Profile:For Hospitals">Practo Profile</a></div>
+                    <div><a href="/providers/hospitals/reach" target="_blank" data-ana="FooterLinksClick:Reach:For Hospitals">Practo Reach</a></div>
+                    <div><a href="//drive.practo.com" target="_blank" data-ana="FooterLinksClick:Practo Drive:For Hospitals">Practo Drive</a></div>
+                </div>
+            </div>
+            <div class="pr-footer-column">
+                <div class="pr-footer-column-head">
+                    <h6 class="collapsed">More</h6>
+                </div>
+                <div class="pr-footer-column-links responsive-hide">
+                    <div><a href="//help.practo.com" target="_blank" data-ana="FooterLinksClick:Help:More">Help</a></div>
+                    <div><a href="//developers.practo.com" target="_blank" data-ana="FooterLinksClick:Developers:More">Developers</a></div>
+                    <div><a href="/company/privacy" target="_blank" data-ana="FooterLinksClick:Privacy Policy:More">Privacy Policy</a></div>
+                    <div><a href="/company/terms" target="_blank" data-ana="FooterLinksClick:Terms &amp; Conditions:More">Terms &amp; Conditions</a></div>
+                                            <div><a href="/sitemap" target="_blank" data-ana="FooterLinksClick:Healthcare Directory:More">Healthcare directory</a></div>
+                                        <div><a href="/health-wiki" target="_blank" data-ana="FooterLinksClick:Health-Wiki:More">Practo Health Wiki</a></div>
+                </div>
+            </div>
+            <div class="pr-footer-column social-footer-links">
+                <div class="pr-footer-column-head">
+                    <h6 class="collapsed">Social</h6>
+                </div>
+                <div class="pr-footer-column-links responsive-hide">
+                    <div>
+                        <a href="//www.facebook.com/practo" rel="nofollow" target="_blank" data-ana="FooterLinksClick:Facebook:Connect">Facebook</a>
+                    </div>
+                    <div>
+                        <a href="//twitter.com/Practo" rel="nofollow" target="_blank" data-ana="FooterLinksClick:Twitter:Connect">Twitter</a>
+                    </div>
+                    <div>
+                        <a href="//www.linkedin.com/company/practo-technologies-pvt-ltd" rel="nofollow" target="_blank" data-ana="FooterLinksClick:LinkedIn:Connect">LinkedIn</a>
+                    </div>
+                    <div>
+                        <a href="//www.youtube.com/user/PractoSupport" rel="nofollow" target="_blank" data-ana="FooterLinksClick:Youtube:Connect">Youtube</a>
+                    </div>
+                    <div>
+                        <a href="//github.com/practo" rel="nofollow" target="_blank" data-ana="FooterLinksClick:GitHub:Connect">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="copy-rights-wrap clearfix">
+        <div class="page-body-container clearfix">
+            <div class="u-t-center"><img src="/bundles/practopractoapp/images/logos/white_practo_logo.svg" alt="Practo"></div>
+            <div class="copyright">Copyright © 2018 Practo. All rights reserved.</div>
+        </div>
+    </div>
+</div>
+                                
+                <script id="tabsTemplate" type="text/template">
+                    <% var countryName = searchvars.cityCountry[city.toLowerCase()];
+                    if (countryName == 'india') { %>
+
+            </script>
+            
+                        <script type="text/template" id="myDoctors">
+    <% if(doctors.length > 0) { %>
+        <div class="mydoctors-count">My Doctors (<%= doctors.length %>)</div>
+        <div class="mydoctors">
+            <% _.each(doctors, function(item, key, arr) { %>
+                <% if(key==0) { %>
+                    <div class="doc-card first" id="mydoc-handle">
+                <% } %>
+                <% if(key != 0) { %>
+                    <div class="doc-card">
+                <% } %>
+                    <button type="button" class="mydoc-remove" data-pid="<%=item.practice_doctor.id  %>" aria-label="Close"><span aria-hidden="true">&#215;</span></button>
+                    <div class="mydoc-avatar">
+                        <img src="<%=item.profile%>">
+                    </div>
+                    <div class="mydoctors-name-wrapper">
+                        <a class="mydoc-name" href="<%=item.profileurl %>" target="_BLANK">
+                            <h2><%= item.practice_doctor.doctor.name %></h2>
+                        </a>
+                        <strong class="mydoc-spec"><%= item.spec %></strong>
+                    </div>
+                    <% if (item.practice_doctor.status == 'VN') { %>
+                        <a class="mydoc-action vn e-btn e-btn-hollow" href="<%= item.profileurl %>" target="_BLANK">Call Now</a>
+                    <% } %>
+                    <% if (item.practice_doctor.status == 'ABS') { %>
+                        <a class="mydoc-action e-btn e-btn-light" href="<%= item.profileurl %>" target="_BLANK">Book</a>
+                    <% } %>
+                        </div>
+                <% }); %>
+
+    </div>
+    <% if(doctors.length > 3) { %>
+        <div class="mydoc-page mydoc-prev icon-ic_back_cheveron" id="mydoc_prev">
+        </div>
+        <div class="mydoc-page mydoc-next icon-ic_next_cheveron" id="mydoc_next">
+        </div>
+        <% } %>
+    <% } %>
+</script>
+<div id="delete-info" class="delete-modal" style="display:none">
+    <label>Unable to delete. Try again later.</label>
+    <hr>
+    <div class="actions">
+        <button class="doc-cancel">OK</button>
+    </div>
+</div>
+<div id="delete-confirm" class="delete-modal" style="display:none">
+    <label>Are you sure you want to remove this doctor ?</label>
+    <hr>
+    <div class="actions">
+        <button class="doc-cancel">Cancel</button>
+        <button class="doc-ok">OK</button>
+    </div>
+</div>
+            <script id="fitArticles" type="text/template">
+    <div>
+        <div class="home-fit-header u-t-center u-t-bold">
+            <h2>Read top articles from health experts</h2>
+        </div>
+        <div id="articlesWrapper" class="articles-wrapper owl-carousel">
+            <% _.each(articles, function(article, index){ %>
+                <a href="<%= article.postData.postUrl %>" target="_blank" class="home-fit-body-container">
+                    <div class="home-fit-body">
+                        <div class="article-image-wrapper">
+                            <img src="<%= article.postData.smallImgUrl %>"/>
+                        </div>
+                        <div class="fit-details-wrapper">
+                            <div class="u-t-bold home-fit-title">
+                                <%= article.postData.title %>
+                            </div>
+                            <div class="home-fit-author u-t-bold">
+                                <span><%= article.author.name %></span>,
+                                <span><%= article.author.specialization %></span>
+                            </div>
+                            <div>
+                                <span class="u-t-bold u-t-regular u-t-grey"><%= article.postData.likeCount %></span>
+                                <span class="u-t-regular u-t-grey u-t-bold">Likes</span>
+                                <span class="bullet-separator">&#9679;</span>
+                                <span class="u-left-spacer u-t-bold u-t-regular u-t-grey"><%= article.postData.viewCount %></span>
+                                <span class="u-t-regular u-t-grey u-t-bold">Views</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            <% }); %>
+        </div>
+        <div class="u-t-center home-details-section-action">
+            <a class="e-btn e-btn-light" href="/healthfeed?utm_source=practo_home" target="_blank">More articles</a>
+        </div>
+    </div>
+</script>            <script id="userTestimonials" type="text/template">
+<% _.each(testimonials, function(testimonial, index){ %>
+    <% if(testimonial.reviewLink) { %>
+        <a href="<%= testimonial.reviewLink %>" class="u-no-dec" target="_blank">
+    <% } %>
+        <div class="u-t-grey">
+            <div class="review-star u-bottom-spacer u-text-green">
+                <% for(var i=0; i < Math.floor(testimonial.reviewStar); i++) { %>
+                    <i class="icon-ic_star_solid icon-star"></i>
+                <% } %>
+            </div>
+            <div class="review-text u-t-regular">
+                &#8220;<%= testimonial.reviewText %>&#8221;
+            </div>
+            <div>
+                <% if(testimonial.username) { %>
+                <span class="icon-ic_user_system icon-user"></span>
+                <% } %>
+                <span class="u-t-regular u-inline-top review-user-name"><%= testimonial.username %></span>
+            </div>
+        </div>
+    <% if(testimonial.reviewLink) { %>
+       </a>
+    <% } %>
+<% }); %>
+</script>
+        </div>
+        <script type="text/javascript">
+            function adjustSectionHeight() {
+                var heightToSet = window.innerHeight - 60;
+                var elementsToSet = document.getElementsByClassName('home-details-table-wrapper');
+                for(var i=0; i<elementsToSet.length; i++) {
+                    if(heightToSet > 600) {
+                        elementsToSet[i].style.height = heightToSet + 'px';
+                    } else {
+                        elementsToSet[i].style.height = '600px';
+                    }
+                    elementsToSet[i].classList.add('active');
+                }
+            }
+            adjustSectionHeight();
+        </script>
+    </div>
+    <input id="ana-record" value="{&quot;sweep_enabled&quot;:true,&quot;product&quot;:&quot;Home&quot;,&quot;page&quot;:&quot;Home&quot;,&quot;form&quot;:{&quot;q&quot;:null,&quot;locality&quot;:null,&quot;city&quot;:&quot;Bangalore&quot;},&quot;country&quot;:&quot;india&quot;,&quot;cerebro&quot;:true}" type="hidden">
+
+    </div>
+
+    <div class="clear"></div>
+    
+<script type="text/javascript">
+    var practo = practo || {};
+    practo.ray_host = "https:\/\/ray.practo.com";
+    practo.accounts_host = "https:\/\/accounts.practo.com";
+    practo.fabric_host = "https:\/\/www.practo.com";
+    practo.epicenter_host = "https:\/\/epicenter.practo.com";
+    practo.fabric_socket_host = "https:\/\/fabric-socket.practo.com";
+    practo.accounts_host = "https:\/\/accounts.practo.com";
+</script>
+
+    <script>
+  window.locale = '';
+  var practo = practo||{};
+  practo.omnisearch = {};
+  practo.omnisearch.doctorLabel = 'Doctors named';
+  practo.omnisearch.clinicLabel = 'Clinics named';
+  practo.omnisearch.hospitalLabel = 'Hospitals named';
+  practo.omnisearch.medicalCenterLabel = 'Medical Centers named';
+  practo.omnisearch.labLabel = 'Labs named';
+  practo.omnisearch.currentLocation = ['Current location'];
+  practo.omnisearch.entireCity = 'Entire City';
+  practo.omnisearch.wellnessLabel = 'Spas and Salons named';
+  practo.omnisearch.spaLabel = 'Spas named';
+  practo.omnisearch.salonLabel = 'Salons named';
+  practo.omnisearch.fitnessLabel = 'Gyms named';
+  practo.omnisearch.gettingLocationPlaceholder = 'Getting location...'
+  practo.omnisearch.translations = {
+  'locality': 'locality',
+  'city': 'city',
+  'landmark': 'landmark',
+  'speciality': 'speciality',
+  'clinic speciality': 'clinic speciality',
+  'hospital speciality': 'hospital speciality',
+  'symptom': 'symptom',
+  'service': 'service',
+  'Top Localitie': 'Top Localities',
+  'hospital': 'Hospital',
+  'lab': 'Lab',
+  'spa/salon': 'spa/salon',
+  'gym/yoga': 'Gym',
+  'test': 'test',
+  'doctor': 'doctor',
+  'clinic': 'clinic',
+  'Dentist': "Dentist",
+  'Gynecologist/obstetrician': "Gynecologist/obstetrician",
+  'Dermatologist': "Dermatologist",
+  'Pediatrician': "Pediatrician",
+  'General Physician': "General Physician",
+  'Ear-nose-throat (ent) Specialist': "Ear-nose-throat (ent) Specialist",
+  'Homoeopath': "Homoeopath",
+  'Ayurveda': "Ayurveda",
+  'Psychiatrist': "Psychiatrist",
+  'Ear-Nose-Throat (ENT)': "Ear-Nose-Throat (ENT)",
+  'Ophthalmologist': "Ophthalmologist",
+  'Neurologist': "Neurologist",
+  'Orthopedist': "Orthopedist",
+  'Gastroenterologist': "Gastroenterologist",
+  'Pulmonologist': "Pulmonologist",
+  'Endocrinologist': "Endocrinologist",
+  'Urologist': "Urologist",
+  'Cardiologist': "Cardiologist",
+  'General Surgeon': "General Surgeon",
+  'Oncologist': "Oncologist",
+  'Gynecologist/Obstetrician': "Gynecologist/Obstetrician",
+  'Thyroid Profile': 'Thyroid Profile',
+  'Lipid Profile': 'Lipid Profile',
+  'Complete Blood Count': 'Complete Blood Count',
+  'Entire City': 'Entire City',
+  'type': 'type',
+  'All of': 'All of'
+  }
+  practo.omnisearch.topSpecializations = [
+    "Dentist",
+    "Gynecologist/obstetrician",
+    "General Physician",
+    "Dermatologist",
+    "Ear-nose-throat (ent) Specialist",
+    "Homoeopath",
+    "Ayurveda"
+  ];
+  practo.omnisearch.topSpecializationsType = 'speciality';
+
+  practo.omnisearch.topTests = [];
+  practo.omnisearch.topTestsType = 'test';
+
+  practo.omnisearch.headerWordsKeyValueMap = {
+    "clinic": "Clinics",
+    "medical center": "Medical Centers",
+    "doctor": "Doctors",
+    "diagnostic": "Diagnostic Labs",
+    "spa": "Spas and Salons",
+    "salon": "Spas and Salons",
+    "gym": "Gyms and Yoga Centres",
+    "yoga": "Gyms and Yoga Centres"
+  };
+
+  practo.omnisearch.placeholderDoctor = 'Search Specialities, Doctors, Clinics';
+  practo.omnisearch.placeholderLabs = 'diagnostic labs';
+  practo.omnisearch.placeholderHospital = 'Hospitals';
+  practo.omnisearch.placeholderMedicalCenter = 'medical centers';
+  practo.omnisearch.placeholderEtc = 'etc';
+
+  practo.cerebroOmni = {};
+  practo.cerebroOmni.placeholderSpeciality = 'Dentist';
+  practo.cerebroOmni.placeholderService = 'Root Canal Treatment';
+
+</script>
+    <script>
+  var practo = practo||{};
+  practo.errormessage = {};
+  practo.errormessage.smsNotSent = 'Sorry, SMS could not be sent';
+  practo.errormessage.enterValidNumber = 'Enter valid number';
+  practo.errormessage.enterTenDigitNumber = 'Enter 10 digit number';
+ </script>            <script type="text/javascript">
+            window.mixpanel_token = "85d643d7bc71611832663cd683666848";
+        </script>
+                    <script type="text/javascript">
+                window.sweep_api = "sweep.practo.com";
+            </script>
+                          
+                    
+                <script src="https://www.practo.com/js/f792226-f2c3e23.js"></script>
+              <script src="/js/27cef0a-d52bb5a.js"></script>
+              
+                
+    
+
+        
+    
+
+<script>
+    var practo = practo || {};
+    practo.fabric = practo.fabric || {};
+    practo.fabric.facebook_pagetab_app_id = '565933810094241';
+    practo.fabric.sessionPractices = [];
+</script>
+
+
+                
+    <script src="/js/d6cac58-90250da.js"></script>
+
+
+<!-- If any of the session role exists in staff roles then set id_doctor as true -->
+
+    <script src="https://nav.practo.com/8.0.22/consumer/js/practonav.js"></script>
+    <link rel="stylesheet" href="https://nav.practo.com/8.0.22/consumer/css/practonav.css">
+<link rel="stylesheet" href="https://www.practostatic.com/fonts/v6/fonts_icons.min.css">
+
+<script>
+                 var currentPractice = null;
+        
+                    function loadNavigation(){
+                var localeValue = 'en'.split('-')[0];
+                $('body').practoNav({
+                    nav: {
+                                                    "is_loggedin" : false,
+                                                'login' : {
+                            'url': '',
+                            'callback': typeof(logMeIn) == "function" ? logMeIn: "",
+                            'logouturl': "https://www.practo.com/health/logout"
+                        },
+                      'onRender': typeof(showsearchInNaBar) == "function" ? showsearchInNaBar :"" ,
+                      'forDoctorsUrl' : {
+                          'IN': '/for-doctors',
+                          'SG': '/for-doctors',
+                          'BR': '/pt-br/solucoes-para-medicos/ray',
+                          'PH': '/philippines/for-doctors/ray',
+                          'ID': '/id-id/for-doctors/ray'
+                      },
+                      'searchEnabled': false,
+                      'consultEnabled': true,
+                      'drive': {
+                        'enabled': false
+                      },
+                      'order': {
+                        'enabled': true,
+                        'url': 'https://www.practo.com/order?utm_source=practonavbar&utm_medium=referral&utm_campaign=fabric_practonavbarredirect​'
+                      },
+                      'healthfeedEnabled': ("IN" == "IN") ? true : false,
+                      'selectedNavLabel': 'Search and Book',
+                      'locale': localeValue == ''? 'en' : localeValue,
+                      'country_code' : "IN",
+                      'addproductlogo': ''
+                    }
+                });
+            }
+            loadNavigation();
+              </script>
+
+            
+    
+    <script type="text/javascript">
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 327052174165071);
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=327052174165071&ev=PageView&noscript=1"/>
+    </noscript>
+
+    <noscript>
+        <style>
+            @media screen and (min-width : 980px){
+                .home-title{
+                    margin-top: 100px;
+                }
+                .home-search{
+                    margin-bottom: 150px !important;
+                }
+            }
+            #seoInfoText{
+                cursor:default;
+            }
+            .searchFormHideState{
+                display:block;
+            }
+            #seoInfoText > p.head_text{
+                background-image:none;
+            }
+            .calendarDivs{
+                display: block;
+            }
+            .hideifnojs{
+                display:none !important;
+            }
+            .showifnojs{
+                display:block;
+            }
+            .no-js-city-landing-link {
+                width: 70%;
+                margin: 0 auto;
+            }
+            .no-js-city-landing-link p {
+                text-align: center;
+                color: #ff005b;
+            }
+            .no-js-city-landing-link .city-dropdown-option {
+                display: inline-block;
+                color: #7c8f99;
+                padding: 5px 10px;
+                text-align: center;
+            }
+            .no-js-city-landing-link .city-dropdown-top-cities-container {
+                margin: 25px 15px 25px 0;
+            }
+        </style>
+    </noscript>
+
+    <script>
+        var specialitiesList = {
+            'dentist':'Dentist',
+            'ophthalmologist':'Ophthalmologist',
+            'dermatologist':'Dermatologist',
+            'homeopath':'Homeopath',
+            'ayurveda':'Ayurveda',
+            'cardiologist':'Cardiologist',
+            'gastroenterologist':'Gastroenterologist',
+            'psychiatrist':'Psychiatrist',
+            'ear-nose-throat-ent-specialist':'Ear-Nose-Throat (ENT)',
+            'gynecologist-obstetrician':'Gynecologist/Obstetrician',
+            'neurologist':'Neurologist', 'urologist':'Urologist'
+        };
+        window.topSpecialities = [];
+        // VWO Tracking code
+
+    //yahoo-tracker
+    (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"4019013"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+
+
+    if(typeof window.onesignal_id !== 'undefined' && window.onesignal_id !== '' ){
+        var OneSignal = OneSignal || [];
+        OneSignal.push(["init", {
+            appId: onesignal_id,
+            autoRegister: true,
+            notifyButton: {
+            enable: false
+            },
+            welcomeNotification: {
+                disable: true
+            },
+            persistNotification: true
+        }]);
+    }
+        
+        window.addEventListener("script-load", function(){
+            $(".searchResultsLoader p.gif-holder").html("<img alt='" + "loading" + "...' src='https://www.practo.com/bundles/practopractoapp/images/loader.gif'/>");
+        })
+
+                searchvars = {"inFrame":false,"specializations":["Dentist","General Physician","Ayurveda","Pediatrician","Orthopedist","Gynecologist\/obstetrician","Dermatologist","Gynecologist","Homoeopath","Dental Surgeon","Physiotherapist","General Surgeon","Implantologist","Obstetrician","Cosmetologist","Cosmetic\/aesthetic Dentist","Urologist","Ophthalmologist\/ Eye Surgeon","Ophthalmologist","Oral And Maxillofacial Surgeon","Psychiatrist","Cardiologist","Ear-Nose-Throat (Ent) Specialist","Ent\/ Otorhinolaryngologist","Internal Medicine","Laparoscopic Surgeon","Orthodontist","Infertility Specialist","Dietitian\/nutritionist","Plastic Surgeon","Neurologist","Psychologist","Periodontist","Gastroenterologist","Radiologist","Neurosurgeon","Endodontist","Pulmonologist","Pediatric Dentist","Oncologist","Spine Surgeon","Speech Therapist","Prosthodontist","Hair Transplant Surgeon","Andrologist","Endocrinologist","Audiologist","Joint Replacement Surgeon","Sexologist","Trichologist","Diabetologist","Alternative Medicine","Bariatric Surgeon","Laparoscopic Surgeon (Obs & Gyn)","Counselling Psychologist","Yoga And Naturopathy","Nephrologist\/renal Specialist","Nephrologist","General Practitioner","Anesthesiologist","Pediatric Surgeon","Acupuncturist","Medical Oncologist","Rheumatologist","Pathologist","Venereologist","Consultant Physician","Dermatosurgeon","Reproductive Endocrinologist (Infertility)","Interventional Cardiologist","Aesthetic Dermatologist","Psychotherapist","Surgical Oncologist","Clinical Psychologist","Sports And Musculoskeletal Physiotherapist","Gastrointestinal Surgeon","Paediatric Intensivist","Spine And Pain Specialist","Head And Neck Surgeon","Cardiothoracic Surgeon","Veterinary Physician","Veterinarian","Neonatologist","Family Physician","Addiction Psychiatrist","Urological Surgeon","Oral Medicine And Radiology","Pediatric Dermatologist","Occupational Therapist","Geriatric Physiotherapist","Dentofacial Orthopedist","Vascular Surgeon","Neuropsychiatrist","Preventive Dentistry","Hematologist","Hematologic Oncologist","Cardiac Surgeon","Geriatric Psychiatrist","Unani","Radiation Oncologist","Neuro Physiotherapist","Orthopedic Physiotherapist","Allergist\/immunologist","Oral Pathologist","Veterinary Surgeon","Cardiothoracic And Vascular Surgeon","Pediatric Neurologist","Pain Management Specialist","Sports Nutritionist","Urogynecologist","Opticians","Optician","Ultrasonologist","Pediatric Cardiologist","Hypnotherapist","Pediatric Ot","Adolescent And Child Psychiatrist","Pediatric Physiotherapist","Pediatric Otorhinolaryngologist","Geriatrician","Thoracic (Chest) Surgeon","Plastic Reconstruction Surgeon","Otologist\/ Neurotologist","Optometrist","Breast Surgeon","Neurointerventional Surgery","Gastroentrology Surgeon","Burn Surgeon","Siddha","Rehab & Physical Medicine Specialist","Ocularist","Medical Microbiologist","Hepatologist","Emergency & Critical Care","Chiropractor","Interventional Radiologist","Immunologist","Geriatric Medicine Specialist","Forensic Psychiatrist","Clinical Immunologist","Cardiovascular & Pulmonary Physiotherapist","Sports Medicine Surgeon","Pediatric Rheumatologist","Nuclear Medicine Physician","Intestine Surgeon","Clinical Pharmacologist And Toxicologist","Clinical Pharmacologist","Clinical Embryologist","Ayurvedic Surgeon","Acupressure","Immunodermatologist","Geriatric Neurologist","Emergency Medicine","Electro Homeopath","Critical Care Medicine","Clinical Nutritionist","Tuberculous And Chest Diseases Specialist","Sports Medicine Specialist","Sports Medicine Physician","Somnologist (Sleep Specialist)","Somnologist","Public Health Dentist","Preventive Medicine","Integrative Health Coach","Infectious Diseases Physician","Hepato-Biliary-Pancreatic","Health Psychologist","Health Administration Specialist","Forensic Medicine Specialist","Endocrine Surgeon","Child Behavior Therapist","Ayurvedic Gynecologist & Obstetrician","Aviation And Aerospace Medicine Specialist","Reproductive Health Specialist","Ot For Mentally Challenged","Infectious Diseases Physician ","Infectious And Tropical Medicine Physician","Gynecologic Oncologist","Dermatopathologist","Colorectal Surgeon","Clinical Hematologist","Bone Marrow Transplant Surgeon"],"form":{"city":"bangalore","q":null,"searched_value":"","locality":"","unslugifiedCity":"Bangalore"},"searchfor":"specialization","normalizedForm":{"q":null,"locality":null,"city":"Bangalore"},"topLocalities":["Whitefield","Indiranagar","Jayanagar","Marathahalli","MG Road","Koramangala","Electronics City","JP Nagar","Malleswaram","Rajajinagar","HSR Layout","Vijayanagar","Bannerghatta Road","Majestic","RT Nagar","HAL","Hebbal","KR Puram","Yelahanka","Banashankari"],"cityCountry":{"bangalore":"india","hubli":"india","mangalore":"india","mysore":"india","guntur":"india","hyderabad":"india","nellore":"india","visakhapatnam":"india","warangal":"india","kakinada":"india","vijayawada":"india","guwahati":"india","patna":"india","chandigarh":"india","raipur":"india","delhi":"india","north goa":"india","south goa":"india","ahmedabad":"india","bharuch":"india","gandhinagar":"india","rajkot":"india","surat":"india","vadodara":"india","ambala":"india","panchkula":"india","yamunanagar":"india","faridabad":"india","gurgaon":"india","hisar":"india","jhajjar":"india","sonipat":"india","srinagar":"india","dhanbad":"india","ranchi":"india","jamshedpur":"india","ernakulam":"india","thiruvananthapuram":"india","bhopal":"india","gwalior":"india","indore":"india","jabalpur":"india","amravati":"india","aurangabad":"india","mumbai":"india","thane":"india","nagpur":"india","nashik":"india","kolhapur":"india","pune":"india","solapur":"india","navi mumbai":"india","cuttack":"india","bhubaneswar":"india","puducherry":"india","amritsar":"india","bathinda":"india","jalandhar":"india","ludhiana":"india","mohali":"india","patiala":"india","jaipur":"india","jodhpur":"india","kota":"india","udaipur":"india","chennai":"india","coimbatore":"india","kanchipuram":"india","madurai":"india","salem":"india","vellore":"india","agra":"india","mathura":"india","allahabad":"india","bareilly":"india","lucknow":"india","noida":"india","ghaziabad":"india","meerut":"india","moradabad":"india","varanasi":"india","kanpur":"india","dehradun":"india","bardhaman":"india","hooghly":"india","howrah":"india","kolkata":"india","singapore":"singapore","jakarta":"indonesia","bogor":"indonesia","depok":"indonesia","tangerang":"indonesia","south tangerang":"indonesia","batangas":"philippines","cavite":"philippines","cebu city":"philippines","manila":"philippines","caloocan":"philippines","las pinas":"philippines","makati":"philippines","malabon":"philippines","mandaluyong":"philippines","marikina":"philippines","muntinlupa":"philippines","navotas":"philippines","paranaque":"philippines","pasay":"philippines","pasig":"philippines","pateros":"philippines","quezon city":"philippines","taguig":"philippines","valenzuela":"philippines","san juan":"philippines","s\u00e3o paulo":"brazil","rio de janeiro":"brazil","kuala lumpur":"malaysia","petaling jaya":"malaysia","puchong":"malaysia","subang jaya":"malaysia","shah alam":"malaysia"},"practice_types":["diagnostic","spa","salon","gym","yoga","hospital"]}
+                    var headerWords = ["diagnostic","spa","salon","gym","yoga","hospital"];
+                searchvars['mydoctors'] = [];
+            </script>
+        <script src="/js/62e1165-6591207.js"></script>
+                <script>
+            var omniConfig = {
+                "location": {
+                    "suggestion": "Bangalore",
+                    "city": "bangalore",
+                    "type": "city"
+                },
+                "placeholders": {
+                    "locality": "Search Location",
+                    "keyword": "Search doctors, clinics, hospitals, etc."
+                },
+                "isBigBar": true
+            };
+        </script>
+                    <script src="https://www.practo.com/js/889f17c-4acff6f.js"></script>
+                <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDeBqqhX0b4QuBgJm_8SNxGgV0_UIDniQY" defer="" async=""></script>
+
+                    
+        <script>
+            
+            if (typeof window.practo == "undefined" ){
+                window.practo = {
+                    "fabric" : {
+                        "labels" : {"patient":"Patient","doctor":"Doctor"}
+                    }
+                }
+            }
+            else {
+                if (typeof window.practo.fabric == "undefined"){
+                    window.practo.fabric = {
+                        "labels" : {"patient":"Patient","doctor":"Doctor"}
+                    };
+                }
+                else {
+                    window.practo.fabric.labels = {"patient":"Patient","doctor":"Doctor"};
+                }
+            }
+
+            
+        </script>
+        
+    
+                                                <!-- Google Code for Remarketing Tag -->
+                <script type="text/javascript">
+                    /* <![CDATA[ */
+                    var google_conversion_id = 1007860816;
+                    var google_custom_params = window.google_tag_params;
+                    var google_remarketing_only = true;
+                    window.addEventListener('load', function(){
+                        var a = document.createElement('script');
+                        a.async=1;a.src='//www.googleadservices.com/pagead/conversion.js';
+                        var m = document.getElementsByTagName('script')[0];
+                        m.parentNode.insertBefore(a,m);
+                    });
+                    /* ]]> */
+                </script>
+                <noscript>
+                    <div style="display:inline;">
+                    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1007860816/?value=0&amp;guid=ON&amp;script=0"/>
+                    </div>
+                </noscript>
+                              <script type="text/javascript">
+      window.adroll_segment_id = "1664be07";
+    </script>
+      <!-- Must be loaded at the end of the page -->
+<script>
+    (function(window, document){
+        var ev = document.createEvent('Event');
+        ev.initEvent('script-load', true, true);
+        var scripts = document.querySelectorAll("script[async-src]");
+
+        var _loadScript = function(index){
+            if(index >= scripts.length){
+                window.dispatchEvent(ev);
+                return null;
+            }
+
+            var script = scripts[index];
+            var asyncSrc = script.getAttribute("async-src");
+            script.removeAttribute("async-src");
+            if(!asyncSrc){
+                throw Error("URL not provided for async loading");
+            }
+            var asyncScript = document.createElement("script");
+            asyncScript.src = asyncSrc;
+
+            asyncScript.onload = asyncScript.onerror = function(){
+                asyncScript.onload = asyncScript.onerror = null;
+                _loadScript(index+1);
+            };
+            if(script.parentNode){
+                script.parentNode.removeChild(script);
+            }
+            document.head.appendChild(asyncScript)
+        };
+
+        window.addEventListener('load', function(){
+            _loadScript(0);
+        });
+
+    })(window, document);
+</script>    <input id="tracker-constants" value="{
+    &quot;googleadservice&quot; : {
+      &quot;default&quot; : {
+        &quot;id&quot; : &quot;960721207&quot;,
+        &quot;label&quot; : {
+          &quot;vn&quot; : &quot;JgCMCMHB41wQt-KNygM&quot;,
+          &quot;abs&quot; : &quot;OKo2CK74vFcQt-KNygM&quot;
+        }
+      },
+      &quot;singapore&quot; : {
+        &quot;id&quot; : &quot;957551904&quot;,
+        &quot;label&quot; : {
+          &quot;vn&quot; : &quot;2KlYCNHhxlkQoKrMyAM&quot;,
+          &quot;abs&quot; : &quot;pjxaCMz_w1kQoKrMyAM&quot;
+        }
+      },
+      &quot;metro-manila&quot; : {
+        &quot;id&quot; : &quot;952353750&quot;,
+        &quot;label&quot; : {
+          &quot;vn&quot; : &quot;EEplCN7Xs1sQ1oePxgM&quot;,
+          &quot;abs&quot; : &quot;VIz-CKbnnFsQ1oePxgM&quot;
+        }
+      }
+    },
+    &quot;bing_analytics&quot; : {
+      &quot;id&quot; : {
+        &quot;vn&quot; : &quot;4019014&quot;,
+        &quot;abs&quot; : &quot;4019013&quot;
+      }
+    }
+  }" type="hidden">  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e66900166e","applicationID":"853593","transactionName":"b1wDZktSXkVRUhcNWFYWIkdKR19bH2ERBVRMVjFAWFBEWXFBEyZCVl0NV2ZbX1tV","queueTime":1,"applicationTime":76,"atts":"QxsUEANITRoSUEFeTEVE","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.6296700880052911"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.3039362560970117" alt="" src="https://bat.bing.com/action/0?ti=4019013&amp;Ver=2&amp;mid=78a3fa4a-67d0-6cd2-c406-8e9a0336e097&amp;evt=pageLoad&amp;sid=1b8a8e5a-0&amp;lt=1257&amp;pi=0&amp;lg=en-US&amp;sw=1360&amp;sh=768&amp;sc=24&amp;tl=Your%20home%20for%20health%20%7C%20Practo&amp;r=https%3A%2F%2Fwww.google.co.in%2F&amp;p=https%3A%2F%2Fwww.practo.com%2F&amp;msclkid=N&amp;rn=601214" width="0" height="0"></div><div class="jquery-modal blocker"><iframe id="login-iframe-form" style="height: 494.8px; max-height: 494.8px;" scrolling="no" src="https://accounts.practo.com/login?view_type=modal&amp;intent=profiles&amp;next=%2Fcheckid_request" class="modal current" frameborder="0"><a href="#close-modal" rel="modal:close" class="close-modal ">Close</a></iframe></div><div></div><div></div></body>
+  </body>
+  <html>
