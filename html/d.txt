@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div>
+    <h1 class="header">cars</h1>
+  </div>
+  
+  <div>    
+    <ul>     
+      <li>lamp</li>
+      <li>ferra</li>
+      <li>duca</li>
+      <li>hundi</li>
+    </ul>
+    
+  </div>
+  <h1>invasion</h1>
+  <div class="row">
+    <div class="col-3 col-s-5">
+      <p>dfsd</p>
+      <p>dfsd</p>
+    </div> 
+    
+    <div class="col-2 col-s-4">
+      <p>sdfa</p>
+      <p>sa</p>
+      <p>te</p>
+    </div> 
+    
+  </div>
+  
+ </body>
+</html>
+
+body{
+  background-color:black;
+  color:white;
+    
+}
+.header{
+  text-transform:uppercase;
+  color:yellow;
+  text-align:center;
+  padding:5px;
+}
+[class *= "col-"] {
+  float:left;
+  padding:15px;
+}
+ul{
+  float:right;
+  color:red;
+  list-style:none;
+  border:2px solid green;
+  display:block;
+  border-radius:15px 15px 15px 15px ; 
+}
+ul li{
+  display:inline-block;
+  font-variant:small-caps;
+  padding:2px;
+  margin:2px;
+  font-style:oblique;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class *= "col-"] {
+  width:100%;
+  border:2px solid red
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}

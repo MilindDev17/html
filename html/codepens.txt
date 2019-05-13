@@ -1,0 +1,63 @@
+<div class="facebookapp">
+  <div class="container">
+    <div class="face">
+     <a href="#">image</a>
+      <h1>fasfa</h1>
+       <h5>facebook is a entire state of community ti secure our data with other intrunder come</h5>
+      <input type="text" class="search">
+    </div>
+    <div class=" clear"></div>
+    <div class="face">
+      <p>facebook is a popular website of  
+        india</p>
+    </div>
+  </div>
+</div>
+
+.facebookapp{
+  width:600px;
+  padding:2px;
+  background-color:navajowhite;
+}
+.container{
+  width:210px;
+  margin-left:20px;
+/*   margin-bottom:1px; */
+}
+.clear{
+  border-left:1px solid green;
+  padding-left:12px;
+  float:left;
+}
+h5{
+  text-align:left;
+  color:lightseagreen;
+  overflow:hidden;
+  width:150xpx;
+}
+.face a {
+  list-style-type:none;
+  text-decoration:none;
+  color:dodgerblue;
+}
+.face a:hover{
+  color:red;
+}
+.face a:visited{
+  color:white;
+}
+.face p{
+  font-size:20px;
+  font-weight:bold;
+  position:relative;
+  top:-145px;
+  left:200px;
+}
+.news{
+  position:relative;
+/*   margin-left:380px;
+  margin-top:-480px; */
+  height:150px;
+  left:480px;
+  top:-50
+}
