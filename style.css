@@ -1,0 +1,54 @@
+body{
+    margin: 2px;
+    padding: 62px;
+    color: white;
+    
+}
+.container{
+    background-color: darkslategrey;
+    font-family: cursive;
+    font-size: 10px;
+    height:560px;
+    
+}
+ul{
+    list-style: none;
+    
+}
+ul > li {
+    float: left;
+    letter-spacing: 2px;
+    padding: 7px;
+    
+}
+
+ 
+ .B > ul {
+    float: right
+}
+
+.header{
+    align-items: center;
+    margin-left: 43px;
+    margin-top: 200px;
+    font-size: 20px;
+}
+
+.locations {
+    position: absolute;
+    z-index: 2;
+    margin-top: 200;
+    margin-left: 40px;
+    border-radius: 15px 15px 15px 15px;
+}
+.btn {
+    background-color: orangered;
+}
+.img {
+/*    position: absolute;*/
+    float: right;
+    margin-top: -260px;
+    margin-left: 380px;
+/*    z-index: 2*/
+/*    opacity: 0.3;   */
+}
