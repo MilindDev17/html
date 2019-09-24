@@ -1,54 +1,93 @@
-body{
-    margin: 2px;
-    padding: 62px;
-    color: white;
-    
-}
-.container{
-    background-color: darkslategrey;
+*{
+    margin: 40px;
+    padding: ;
     font-family: cursive;
-    font-size: 10px;
-    height:560px;
-    
-}
-ul{
-    list-style: none;
-    
-}
-ul > li {
-    float: left;
-    letter-spacing: 2px;
-    padding: 7px;
+    color: #d0d8d8;
     
 }
 
- 
- .B > ul {
-    float: right
+.container{
+/*    background-color: #122e2f;  */
+  background-image: linear-gradient(to right, rgba(1, 9, 11), rgba(27, 60, 57));
+} 
+.searching {
+/*
+    display: flex;
+    flex-direction: row;
+*/
+/*    align-items: flex-start;*/
+
+}
+.seachInput {
+/*    border: 0px solid dodgerblue;*/
+    background: black;
+    border-top : none;
+    border-left: none;
+    border-right:none;
+    border-bottom: 2px solid white;
+    float:right;
 }
 
-.header{
+.movieDistributed {
+    border: 2px solid #323d3e;
+    width: 96%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    margin-left: 43px;
-    margin-top: 200px;
-    font-size: 20px;
+    position: relative
+}
+.onceBollywood{
+    border:2px solid #323d3e;
+    width: 10%;
+    height: 250px;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    
+    
 }
 
-.locations {
-    position: absolute;
-    z-index: 2;
-    margin-top: 200;
-    margin-left: 40px;
-    border-radius: 15px 15px 15px 15px;
+ .it {
+     
+     position: relative;
+    width:10%;
+    height: -100%;
+     border:2px solid #323d3e;
+    margin-left: 0px;
 }
-.btn {
-    background-color: orangered;
+.chaptertwo {
+/*    border: 2px solid #323d3e;*/
+    margin-left: 80px;
+     writing-mode: vertical-rl;
 }
-.img {
-/*    position: absolute;*/
-    float: right;
-    margin-top: -260px;
-    margin-left: 380px;
-/*    z-index: 2*/
-/*    opacity: 0.3;   */
+ .itvillan {
+     margin: 2px;
+     margin-top: 0px;
+}
+
+
+.thepeanut {
+    width: 20%;
+    border: 2px solid #323d3e;
+    width: 6oopx;
+    height: 600px
+}
+.thepeanutA {
+    border: 2px solid #323d3e;
+    height: 100px;
+    
+}
+.thepeanutB {
+    border: 2px solid #323d3e;
+    height: 400px
+        
+}
+.peanutC{
+    margin-left: -2px;
+    margin-top: 0px
+}
+.rambo{
+   width: 30%;
+    height: 600px;
+    border: 2px solid #323d3e;
 }
