@@ -1,0 +1,141 @@
+html
+=========================================================
+<!DOCTYPE html>
+<html>
+<head>
+<title> cinema talkies </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="searching">
+            <img src="images/joker-trailer.jpg" width="90px" height="60px">
+                <input type="text" name="search" placeholder="seacch movie" class="seachInput" >
+                 
+            </div>
+          
+        <div class="movieDistributed">
+            <div class="onceBollywood">
+                <p> once in the bollywood </p>
+            </div>
+            <div class="it">
+                <div class="chaptertwo">
+                    <p>IT chapter two </p>
+                    </div>    
+                        <img src="images/it.jpg" width="160px" height="116px" class="itvillan">
+            </div>
+             <div class="thepeanut">
+                 <div class="thepeanutA"><p>The Peanuts Movie </p></div>
+                 <div class="thepeanutB"><img src="images/lionking.jpg" width="230px" height="400" class="peanutC"></div>
+                </div>
+             <div class="rambo">
+                 <div class="ramboDescribe">
+                     <img src="images/rambo.jpg" width="300px" height="300px"> 
+                     <p> Welcome to DarkHorrorGames online games. We dare you to play the scariest horror online games, room escape and Slender Man. Not for the faint of heart.</p>
+                 </div>
+            </div>
+           
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+css
+===============================================================
+*{
+    margin: 40px;
+    padding: ;
+    font-family: cursive;
+    color: #d0d8d8;
+    
+}
+
+.container{
+/*    background-color: #122e2f;  */
+  background-image: linear-gradient(to right, rgba(1, 9, 11), rgba(27, 60, 57));
+} 
+.searching {
+/*
+    display: flex;
+    flex-direction: row;
+*/
+/*    align-items: flex-start;*/
+
+}
+.seachInput {
+/*    border: 0px solid dodgerblue;*/
+    background: black;
+    border-top : none;
+    border-left: none;
+    border-right:none;
+    border-bottom: 2px solid white;
+    float:right;
+}
+
+.movieDistributed {
+    border: 2px solid #323d3e;
+    width: 96%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative
+}
+.onceBollywood{
+    border:2px solid #323d3e;
+    width: 10%;
+    height: 250px;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    
+    
+}
+
+ .it {
+     
+     position: relative;
+    width:10%;
+    height: -100%;
+     border:2px solid #323d3e;
+    margin-left: 0px;
+}
+.chaptertwo {
+/*    border: 2px solid #323d3e;*/
+    margin-left: 80px;
+     writing-mode: vertical-rl;
+}
+ .itvillan {
+     margin: 2px;
+     margin-top: 0px;
+}
+
+
+.thepeanut {
+    width: 20%;
+    border: 2px solid #323d3e;
+    width: 6oopx;
+    height: 600px
+}
+.thepeanutA {
+    border: 2px solid #323d3e;
+    height: 100px;
+    
+}
+.thepeanutB {
+    border: 2px solid #323d3e;
+    height: 400px
+        
+}
+.peanutC{
+    margin-left: -2px;
+    margin-top: 0px
+}
+.rambo{
+   width: 30%;
+    height: 600px;
+    border: 2px solid #323d3e;
+}
